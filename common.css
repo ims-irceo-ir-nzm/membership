@@ -1,0 +1,97 @@
+﻿.grecaptcha-badge {
+    display: none !important;
+}
+
+h6 {
+    text-align: right !important;
+}
+
+@@media only screen and (max-width: 767px) {
+    .card .header {
+        padding: 20px; /*توسط خودمان حذف شد*/
+    }
+
+        .card .header h2 {
+            margin-right: 0px !important; /*توسط خودمان حذف شد*/
+        }
+
+    .rtl div.dataTables_wrapper div.dataTables_filter {
+        text-align: center !important;
+    }
+
+    .rtl div.dataTables_wrapper div.dataTables_length {
+        text-align: center !important;
+    }
+}
+
+.sidebar.scrolled {
+    border-bottom: none !important;
+}
+
+.footer-content p {
+    font-size: 12px;
+}
+
+section.content::before {
+    border-bottom: none !important;
+}
+
+section.content.scrolled::before {
+    border-bottom: none;
+    background: none;
+}
+
+.social-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .social-footer ul li {
+        margin-bottom: 3px;
+        width: 15%;
+        color: #50d38a;
+        font-size: 24px;
+    }
+
+        .social-footer ul li i, .social-footer ul li em {
+            margin: 0;
+            font-size: 34px;
+        }
+
+.footer-content table tbody td {
+    padding-top: 5px;
+}
+
+    .footer-content table tbody td i {
+        margin-bottom: 3px;
+        width: 15%;
+        color: #50d38a;
+        font-size: 24px;
+    }
+
+    .footer-content table tbody td span {
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    .footer-content table tbody td.conains-text {
+        padding-right: 15px;
+    }
+
+.bootstrap-select .btn.btn-round.btn-simple .filter-option {
+    font-size: 11px !important;
+}
+
+.rewrite-protection {
+    border-top: 1px solid #50d38a;
+    padding-top: 10px;
+}
+
+.card .header {
+    padding: 15px !important;
+}
+
+.dropdown-menu {
+    border-radius: 0 0 10px 10px !important;
+    border: 2px solid #50d38a !important;
+}

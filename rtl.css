@@ -1,0 +1,292 @@
+.rtl {
+  direction: rtl;
+  text-align: right; }
+  .rtl ul {
+    padding-right: 0; }
+  .rtl ul.nav-tabs {
+    padding: 15px 0 15px .7rem; }
+  .rtl .ml-auto {
+    margin-right: auto !important;
+    margin-left: unset !important; }
+  .rtl .text-right {
+    text-align: left !important; }
+  .rtl .float-right {
+    float: left !important; }
+  .rtl .float-left {
+    float: right !important; }
+  .rtl .modal-footer > :not(:last-child) {
+    margin-left: .25rem; }
+  .rtl .m-r-15 {
+    margin-left: 15px;
+    margin-right: 0; }
+  .rtl .right-sidebar {
+    left: -300px; }
+    .rtl .right-sidebar.open {
+      left: 0;
+      right: auto; }
+  .rtl .input-group {
+    direction: ltr; }
+    .rtl .input-group .form-control {
+      direction: rtl; }
+
+/* top headre scss */
+.rtl.overlay-open .sidebar {
+  margin-right: 0px; }
+.rtl .navbar-logo {
+  float: right; }
+  .rtl .navbar-logo span {
+    margin-left: 0;
+    margin-right: 10px; }
+.rtl .navbar-nav {
+  float: left; }
+  .rtl .navbar-nav li.app_menu .dropdown-menu,
+  .rtl .navbar-nav .profile .dropdown-menu {
+    left: 0;
+    right: auto; }
+  .rtl .navbar-nav li.notifications .media .media-body {
+    margin-left: 0;
+    margin-right: 10px; }
+    .rtl .navbar-nav li.notifications .media .media-body .name .time {
+      float: left; }
+  .rtl .navbar-nav .profile .user-info a i {
+    float: none !important; }
+  .rtl .navbar-nav .profile .dropdown-menu a i {
+    float: right;
+    line-height: 24px; }
+.rtl .dropdown-menu .header {
+  text-align: right; }
+.rtl .dropdown-menu ul.menu.tasks h4 small {
+  float: left; }
+.rtl .dropdown-menu ul.menu .menu-info {
+  margin-right: 10px;
+  margin-left: 0;
+  text-align: right; }
+.rtl .dropdown-menu ul.menu li a {
+  text-align: right; }
+
+/* left menu scss */
+.rtl .sidebar .menu .list .header:before {
+  left: auto;
+  right: 0; }
+.rtl .sidebar .menu .list a:before {
+  left: auto;
+  right: 0; }
+.rtl .sidebar .menu .list .menu-toggle:before, .rtl .sidebar .menu .list .menu-toggle:after {
+  right: auto;
+  left: 0; }
+.rtl .sidebar .menu .list a span {
+  margin: 0  12px 0 0; }
+.rtl .sidebar .menu .list a i {
+  float: right;
+  line-height: 24px; }
+.rtl .sidebar .menu .list .ml-menu li a {
+  padding-right: 40px;
+  padding-left: 10px; }
+  .rtl .sidebar .menu .list .ml-menu li a::before {
+    content: '\f30f';
+    right: 14px;
+    left: auto;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1); }
+.rtl .sidebar.h_menu .menu li .ml-menu:before, .rtl .sidebar.h_menu .menu li .ml-menu:after {
+  right: 28px;
+  left: auto; }
+.rtl .sidebar.h_menu .menu li .ml-menu li a {
+  margin: 0; }
+  .rtl .sidebar.h_menu .menu li .ml-menu li a::before {
+    right: 24px; }
+.rtl .sidebar.h_menu .menu li:last-child .ml-menu:before, .rtl .sidebar.h_menu .menu li:last-child .ml-menu:after {
+  left: 28px;
+  right: auto; }
+
+/* right menu scss */
+.rtl .right-sidebar #settings .setting-list li .switch {
+  left: 5px;
+  right: auto; }
+
+/* RTL Dashboard scss */
+.rtl .card .header h2 {
+  text-align: right; }
+  .rtl .card .header h2::before {
+    left: auto;
+    right: 0; }
+.rtl .card .header .header-dropdown {
+  right: auto;
+  left: 10px; }
+  .rtl .card .header .header-dropdown ul.dropdown-menu {
+    left: 0 !important;
+    right: auto !important; }
+.rtl .table thead tr th, .rtl .table thead tr td {
+  text-align: right; }
+.rtl .checkbox label {
+  padding-right: 35px;
+  padding-left: 0px; }
+  .rtl .checkbox label:before, .rtl .checkbox label:after {
+    right: 0;
+    left: auto; }
+.rtl .has-success:after, .rtl .has-danger:after {
+  bottom: 14px; }
+.rtl .alert .alert-icon {
+  float: right; }
+.rtl .progress-container .progress .progress-value {
+  left: 0;
+  right: auto; }
+.rtl .block-header .nav-tabs {
+  float: left; }
+.rtl .media.mright .media-body {
+  text-align: left; }
+.rtl .dtp > .dtp-content {
+  right: 50%;
+  left: auto;
+  margin-right: -150px;
+  margin-left: 0; }
+.rtl .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  text-align: right; }
+.rtl .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+  margin-left: 34px;
+  margin-right: 0; }
+.rtl .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  left: 15px;
+  right: auto; }
+
+/* widget scss */
+.rtl .chat-widget li.right {
+  float: left;
+  text-align: left; }
+  .rtl .chat-widget li.right img {
+    float: left; }
+.rtl .follow_us .media .status {
+  right: 25px;
+  left: auto; }
+.rtl .follow_us .media .media-object {
+  margin-right: 0;
+  margin-left: 10px; }
+.rtl .bitcoin .body {
+  width: 100%;
+  text-align: left; }
+.rtl .inbox .mail_list .unread {
+  border-right: 2px solid;
+  border-left: none; }
+.rtl .inbox .mail_list .list-group-item .controls {
+  margin-right: 0px;
+  margin-left: 10px; }
+  .rtl .inbox .mail_list .list-group-item .controls .favourite {
+    margin-right: 10px;
+    margin-left: 0px; }
+.rtl .chat-app .chat .chat-header img {
+  float: right; }
+.rtl .chat-app .chat .chat-header .chat-about {
+  float: right;
+  padding-right: 10px;
+  padding-left: 0px; }
+.rtl .chat-app .chat .chat-history .message:after {
+  right: 20px;
+  left: auto; }
+.rtl .chat-app .chat .chat-history .other-message:after {
+  left: 20px;
+  right: auto; }
+.rtl .chat-app .people-list img {
+  float: right; }
+.rtl .chat-app .people-list .about {
+  float: right;
+  padding-right: 8px;
+  padding-left: 0; }
+.rtl .page-calendar .event-name {
+  border-left: none;
+  border-right: 3px solid; }
+.rtl .file_manager .file .file-name {
+  padding: 10px 20px; }
+  .rtl .file_manager .file .file-name small .date {
+    float: left; }
+.rtl .blog-page .single_post .meta li {
+  margin-left: 15px;
+  margin-right: 0; }
+  .rtl .blog-page .single_post .meta li a i {
+    margin-left: 6px;
+    margin-right: 0; }
+.rtl .blog-page .right-box .instagram-plugin li {
+  float: right; }
+.rtl .blog-page .comment-reply .list-inline li {
+  padding-left: 20px;
+  padding-right: 0; }
+.rtl div.dataTables_wrapper div.dataTables_filter {
+  text-align: left; }
+.rtl .inbox-widget .inbox-inner .inbox-img {
+  float: right; }
+.rtl .inbox-widget .inbox-inner .inbox-item-info {
+  margin-right: 75px;
+  margin-left: 0; }
+.rtl .widget-user img {
+  float: right; }
+.rtl .widget-user .wid-u-info {
+  margin-right: 90px;
+  margin-left: 0; }
+.rtl .profile-page .profile-header .detail {
+  margin-right: 250px;
+  margin-left: 0; }
+.rtl .timeline-item {
+  border-right: 1px solid #e4e4e4;
+  border-left: none; }
+  .rtl .timeline-item:before {
+    right: 2em;
+    left: auto; }
+  .rtl .timeline-item::after {
+    right: -8px;
+    left: auto; }
+.rtl .widget_2 li {
+  border-left: 1px solid #eee;
+  border-right: none; }
+  .rtl .widget_2 li .text-right {
+    text-align: left !important; }
+  .rtl .widget_2 li .text-small {
+    font-size: 14px; }
+.rtl #line_chart {
+  height: 375px !important; }
+.rtl .team-info li + li {
+  z-index: 99;
+  position: relative; }
+.rtl .activity li a i {
+  float: right; }
+.rtl .activity li a .info {
+  margin-right: 50px;
+  margin-left: 0px; }
+
+.rtl .c_review .avatar {
+  float: right; }
+.rtl .product-report .icon {
+  float: right;
+  margin-right: 0;
+  margin-left: 15px; }
+.rtl .ecommerce-page .nav.nav-tabs {
+  padding: 15px .7rem; }
+.rtl .ecommerce-page .details .colors .color:first-of-type {
+  margin-left: 0;
+  margin-right: 20px; }
+.rtl .ecommerce-page .details .sizes .size {
+  display: inline-block; }
+.rtl .ecommerce-page .details .sizes .size:first-of-type {
+  margin-left: 0;
+  margin-right: 40px; }
+
+@media screen and (max-width: 1169px) {
+  .rtl.ls-closed .bars:after,
+  .rtl.ls-closed .bars:before {
+    right: 10px;
+    left: auto; }
+
+  .rtl .navbar > .container .navbar-brand,
+  .rtl .navbar > .container-fluid .navbar-brand {
+    margin-right: 20px;
+    margin-left: 0; } }
+.m-r-10 {
+  margin-left: 10px; }
+
+@media screen and (max-width: 767px) {
+  .rtl.ls-closed .bars:after, .rtl.ls-closed .bars:before {
+    margin-right: 0; }
+
+  .rtl .navbar .navbar-left .task .dropdown-menu {
+    right: -70px; } }
+
+/*# sourceMappingURL=rtl.css.map */

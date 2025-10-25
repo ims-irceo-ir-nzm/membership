@@ -1,0 +1,496 @@
+﻿$('.selectpicker').selectpicker({
+    noneResultsText: 'موردی یافت نشد!',
+    noneSelectedText: 'انتخابی صورت نگرفته است!'
+});
+
+
+$(function () {
+    $('.datepicker').each(function () {
+        var $this = $(this);
+        $this.mask('9999/99/99', { placeholder: 'روز/ماه/سال', autoclear: false });
+        Calendar.setup({
+            inputField: $this.attr('id'),
+            button: $this.attr('id'),
+            ifFormat: "%Y/%m/%d",
+            showsTime: false,
+            dateType: 'jalali',
+            showOthers: true,
+            langNumbers: false,
+            weekNumbers: false,
+        });
+    });
+});
+
+$('form').submit(function () {
+    if ($(this).valid()) {
+        showWaiting();
+    }
+});
+
+$(window).on("unload", function () {
+    showWaiting();
+});
+
+$(window).on('beforeunload', function () {
+    showWaiting();
+
+});
+
+function showWaiting() {
+    var $loadingPopup = $('.page-loader-wrapper');
+    $loadingPopup.show();
+}
+function hideWaiting() {
+    //debugger;
+    setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 20);
+}
+
+//function ajaxFormSubmitting($sender) {
+//    $sender.find('button[type=submit]').attr('disabled', 'disabled');
+//    showWaiting();
+//}
+
+//function ajaxAfterFormSubmitting($sender) {
+//    $sender.find('button[type=submit]').removeAttr('disabled');
+//    hideWaiting();
+//}
+
+function openUploadModal(modalId) {
+    setTimeout(function () {
+        $(modalId).modal('show');
+    },
+        230);
+}
+
+function RedirectWithConfirm(url, id, parameterName, title, message) {
+    swal({
+        title: title,
+        text: message,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+        confirmButtonClass: "btn btn-success",
+        cancelButtonClass: "btn btn-danger",
+        buttonsStyling: false
+    }).then((value) => {
+        if (value) {
+            window.location.href = url + "/?" + parameterName + "=" + id;
+        }
+    });
+}
+
+function CallAjaxWithConfirm(url,
+    id,
+    model,
+    title,
+    message,
+    onSuccessFunction,
+    onFailureFunction,
+    onClickNo,
+    messageType) {
+    swal({
+        title: title,
+        text: message,
+        type: messageType,
+        showCancelButton: true,
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+        confirmButtonClass: "btn btn-success",
+        cancelButtonClass: "btn btn-danger",
+        buttonsStyling: false
+    }).then((value) => {
+        if (value) {
+
+            $.ajax({
+                url: url,
+                data: {
+                    id: id,
+                    model: model
+                },
+                cache: false,
+                //async:false,
+                type: "POST",
+                dataType: "json",
+                success: onSuccessFunction,
+                error: onFailureFunction
+            });
+
+        } else {
+            onClickNo();
+        }
+    });
+}
+
+function CallAjaxWithConfirmAndLoading(url,
+    id,
+    model,
+    title,
+    message,
+    onSuccessFunction,
+    onFailureFunction,
+    onClickNo,
+    showLoadingFunction,
+    messageType) {
+    swal({
+        title: title,
+        text: message,
+        type: messageType,
+        showCancelButton: true,
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+        confirmButtonClass: "btn btn-success",
+        cancelButtonClass: "btn btn-danger",
+        buttonsStyling: false
+    }).then((value) => {
+        if (value) {
+            showLoadingFunction();
+            $.ajax({
+                url: url,
+                data: {
+                    id: id,
+                    model: model
+                },
+                cache: false,
+                //async:false,
+                type: "POST",
+                dataType: "json",
+                success: onSuccessFunction,
+                error: onFailureFunction
+            });
+
+        } else {
+            onClickNo();
+        }
+    });
+}
+
+function RedirectWithElementParameter(href, paramCtrlId, paramName) {
+
+    var itemId = $(paramCtrlId).val(); // get the textbox value
+    if (itemId) {
+        var url = href + '?' + paramName + '=' + itemId; // build new url
+        location.href = url; // redirect
+        return false; // cancel default redirect
+    }
+    return false;
+}
+function RedirectWithParameter(href, id, paramName) {
+
+    // get the textbox value
+    if (id) {
+        var url = href + '?' + paramName + '=' + id; // build new url
+        location.href = url; // redirect
+        return false; // cancel default redirect
+    }
+    return false;
+}
+function CallAction(actionUrl, itemId, successFunction, failFunction) {
+    $.ajax({
+        url: actionUrl,
+        data: { id: itemId },
+        cache: false,
+        type: "POST",
+        dataType: "json",
+        success: successFunction,
+        error: failFunction
+    });
+}
+function CallActionWithData(actionUrl, data, successFunction, failFunction) {
+    $.ajax({
+        url: actionUrl,
+        data: data,
+        cache: false,
+        type: "POST",
+        dataType: "json",
+        success: successFunction,
+        error: failFunction
+    });
+}
+
+function GenerateNotifies(messagesInJson) {
+    var a = messagesInJson;
+    if (a.length === 0) {
+        return;
+    }
+    a = a.replace(/&quot;/g, '"');
+    a = a.replace(/(?:\r\n|\r|\n)/g, '');
+    var messages = jQuery.parseJSON(a);
+    $.each(messages,
+        function (index, value) {
+            GenerateSingleMessage(value.Title, value.Message, value.Type, value.Delay, value.Icon);
+        });
+}
+function GenerateAjaxNotifies(messages) {
+
+
+    $.each(messages,
+        function (index, value) {
+            GenerateSingleMessage(value.Title, value.Message, value.Type, value.Delay, value.Icon);
+        });
+}
+function createButton(text, cssClass, cb) {
+    return $('<button class="' + cssClass + '" >' + text + '</button>').on('click', cb);
+}
+function createMessage(text) {
+    var p = $('<pre>');
+    p.append($.parseHTML(text));
+    //return $('<p>' + $.parseHTML(text) + '</p>');
+    return p;
+}
+function ShowMessageBox(title, message, type, icon, btnModels, nextFunction) {
+    var p = createMessage(message);
+    var html2 = $('<div>')
+        .append(p).append($("<br>"));
+    if (btnModels) {
+        btnModels.forEach(function (item) {
+            if (item.RedirectUrl === "" || !item.RedirectUrl) {
+                html2.append(createButton(item.Caption, item.Type, function () {
+                    //if (nextFunction) {
+                    //    nextFunction();
+                    //}
+                    return;
+                }));
+            } else {
+                html2.append(createButton(item.Caption, item.Type, function () {
+                    location.href = item.RedirectUrl; // redirect
+                    return false; // cancel default redirect
+                }));
+            }
+        });
+    }
+    swal({
+        title: title,
+        //text: message,
+        icon: icon,
+        type: type,
+        html: html2,
+        allowOutsideClick: false,
+        buttonsStyling: false,
+        showCancelButton: false,
+        showConfirmButton: false
+
+    }).then(() => {
+        nextFunction();
+    });
+
+}
+
+
+function ShowSwalAlertMessage(title, message, type, icon, btnOkText, nextFunction) {
+    var btnClass = "btn btn-success";
+    if (type === "error") {
+        btnClass = "btn btn-danger";
+    }
+    message = message.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    var $t = $('<div/>').html(message);
+    swal({
+        title: title,
+        html: $t,
+        icon: icon,
+        type: type,
+        confirmButtonText: btnOkText,
+        confirmButtonClass: btnClass,
+        buttonsStyling: false
+    }).then((value) => {
+        nextFunction();
+    });
+}
+
+function GenerateSingleMessage(title, message, type, delay, icon) {
+
+    if (type === "error" || type === "success" || type === "danger") {
+        if (type === "danger") {
+            type = "error";
+        }
+        ShowSwalAlertMessage(title, message, type, icon, "تایید", function () { });
+    } else {
+        notification(title, message, type, delay, icon);
+    }
+}
+
+function notification(title, message, type, delay, icon) {
+    $.notify({
+        title: title,
+        message: message
+
+    },
+        {
+            type: type,
+            delay: delay,
+            placement: {
+                from: "top",
+                align: "center"
+            },
+            template: '<div data-notify="container" class="bootstrap-notify-container alert alert-{0} alert-dismissible col-xs-6" style="padding-right: 0 !important; padding-right: 0 !important;" role="alert">' +
+                ' <div class="col-xs-1" style="margin: 0 !important"><span data-notify="icon"><i class="material-icons">' + icon + '</i></span></div>' +
+                '<div class="col-xs-10" style="margin: 0 !important"><span class="alert-title" data-notify="title">{1}</span>  <br /> ' +
+                '<span data-notify="message">{2}</span></div>' +
+                '<div class="col-xs-1" style="margin: 0 !important"><button type="button" aria-hidden="true" class="close" data-notify="dismiss" style="float: right!important;">×</button></div>' +
+                '</div>'
+        });
+}
+
+function GenerateBodyMessages(messagesInJson, placeSelector) {
+
+    var a = messagesInJson;
+
+    if (a.length === 0) {
+        return;
+    }
+    a = a.replace(/&quot;/g, '"');
+    a = a.replace(/(?:\r\n|\r|\n)/g, '');
+    var messages = jQuery.parseJSON(a);
+    $.each(messages,
+        function (index, value) {
+
+            var res =
+                '<div class="alert ' +
+                value.Type +
+                ' alert-dismissible" role="alert">' +
+                '<i class="material-icons">' +
+                value.Icon +
+                '</i></span>' + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="material-icons">close</i></button><span><b> ' +
+                value.Title +
+                ' - </b> ' +
+                value.Message +
+                '</span></div>';
+            $(placeSelector).prepend(res);
+
+        });
+}
+
+//حل مشکل تایپ در کنترل تاریخ
+$(".datepicker").on("click", function () {
+
+    $(this).delay(500).focus();
+    $(this).select();
+});
+
+$(".submit-by-enter input").on("keypress", function (e) {
+    
+    if (e.keyCode === 13) {
+        var form = $(this).parents(".submit-by-enter");
+        var btn = form.find(".submit-button");
+        btn.trigger("click");
+    }
+});
+
+$(document).on('keyup', '.form-control', function (e) {
+    //جایگزینی ی و ک فارسی و عربی
+    $(this).val($(this).val().replace(/ك/g, 'ک').replace(/ي/g, 'ی'));
+
+
+    $(this).val($(this).val().replace(/ك/g, 'ک').replace(/ي/g, 'ی'));
+
+    if (e.key === 'ي' || e.key === 'ك') {
+        var newKeycode = 0;
+        if (e.key === 'ي') {
+            newKeycode = 68;
+        }
+        if (e.key === 'ك') {
+            newKeycode = 186;
+        }
+        var new_e = $.Event("keydown");
+        if (newKeycode === 68) {
+            new_e.key = "ی";
+        }
+        new_e.keyCode = newKeycode;
+        new_e.which = newKeycode;
+        new_e.altKey = false;
+        new_e.ctrlKey = true;
+        new_e.shiftKey = false;
+        new_e.metaKey = false;
+        new_e.bubbles = true;
+        $(this).trigger(new_e);
+    }
+});
+
+
+
+$(".digit-only").keydown(function (e) {
+
+    var keycode = e.keyCode ? e.keyCode : e.which;
+    var allowedChars = [39, 37, 8, 46, 9, 13]; //right key,left key, backspace, delete
+    var char = String.fromCharCode(keycode);
+
+    if (e.ctrlKey) return;  //when ctrl key is hold down, nothing is being typed, but something like copy/paste is being performed. 
+    if (keycode === 13 && e.target) {   //if enter key pressed
+        var frm = $(e.target).parents("form");
+        if (frm.length > 0) {   //if inside a form
+            var btn = frm.find("#btnSearch");
+            if (btn.length > 0) {    //if there is a search button
+                if (typeof btn.click === "function") {
+                    btn.click();
+                    return false;
+                }
+            }
+
+        }
+    }
+
+    if (!(jQuery.isNumeric(char) || (keycode >= 96 && keycode <= 105) || allowedChars.indexOf(keycode) !== -1)) {
+
+        if (keycode === 0) {
+            var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if (is_safari) {
+                GenerateSingleMessage("",
+                    "لطفاً برای ورود شماره نظام پزشکی، صفحه کلید خود را در حالت انگلیسی قرار دهید.",
+                    "danger",
+                    5000);
+            }
+        }
+        e.preventDefault();
+    }
+});
+
+$(".onblurdigit-only").blur(function (e) {
+    var titleAlert = $(this).attr('data-val-length');
+    if (titleAlert === '') {
+        titleAlert = 'لطفا دیتای درست وارد نمایید';
+    }
+    if (isNaN($(this).val())) {
+        GenerateSingleMessage("هشدار", titleAlert, "warning", 5000, "warning");
+        $(this).val("");
+    }
+});
+   
+$(".onblur-keep-digit-only").blur(function (e) {
+    if (isNaN($(this).val())) {
+        var value = $(this).val().replace(/\D/g, '');
+        $(this).val(value);
+    }
+});
+/////////////////
+//این اسکریپت برای تکست باکس های که می خواهیم فقط انگلیس تایپ بشن استفاده می شود
+//@Html.TextAreaFor(*, new { @class = "english-only" })
+/////////////////
+
+$(".english-only").keypress(function (e) {
+    var regex = new RegExp("^[a-zA-Z0-9 ]+$");
+    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (regex.test(str)) return true;
+    e.preventDefault();
+    GenerateSingleMessage("هشدار", "لطفا وضعیت کیبورد خود را انگلیسی نمایید", "warning", 5000, "warning");
+    return false;
+});
+
+function SubmitFormToRemote(formId, serializedForm, remoteUrl, type, successFunc, errorFunc, tokenCookieName) {
+    var token = $.cookie(tokenCookieName);
+    if (token) {
+        $.ajax({
+            url: remoteUrl,
+            data: serializedForm,
+            cache: false,
+            type: type,
+            headers: {
+                "Authorization": "Bearer " + token
+            },
+            ContentType: "application/json",
+            success: successFunc,
+            error: errorFunc
+        });
+    } else {
+        location.reload(true);
+    }
+}

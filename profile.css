@@ -1,0 +1,176 @@
+@media (max-width: 600px) {
+    ul.tblUl {
+        display: block !important;
+    }
+    .table-responsive {
+        display: none !important;
+    }
+    .timeline-item {
+        padding: 3em 0.5em 0.5em !important;
+    }
+    .expired {
+        background-size: 45% !important;
+    }
+    .canceled {
+        background-size: 45% !important;
+    }
+    .active {
+        background-size: 45% !important;
+    }
+}
+.suspended {
+    background-image: url('suspend.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: left;
+    background-position-y: 50px;
+}
+.expired {
+    background-image: url('expired.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: left;
+    background-position-y: 50px;
+}
+.canceled {
+    background-image: url('canceled.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: left;
+    background-position-y: 50px;
+}
+.active {
+    background-image: url('active.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: left;
+    background-position-y: 50px;
+}
+.table-responsive {
+    display: block;
+}
+ul.tblUl {
+    display: none;
+    list-style-type: none;
+    border-top: 3px solid #26754b;
+}
+    ul.tblUl.addressUl {
+        padding-top: 4px;
+    }
+    ul.tblUl.addressUl li.tbltitle {
+        font-weight: normal;
+    }
+    ul.tblUl li {
+        padding: 1px 3px;
+    }
+        ul.tblUl li.tbltitle {
+            border-bottom: 1px solid #dee2e6;
+            /*background-color: #b9e4cd80;*/
+            font-weight: bold;
+        }
+ul.tblUl li.no-border-botton {
+    border-bottom: none !important;
+}
+
+        ul.tblUl li.tbldata {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+.badge {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: -2px;
+}
+.user_pic {
+    max-width: 160px;
+}
+.user_pic_default{
+    bottom:auto;
+    border-radius:50% !important;
+    position:absolute;
+    max-width:160px;
+    z-index:99;
+    top:35px;
+}
+.tblparvaneh {
+    border-top: 2px solid black;
+}
+
+    .tblparvaneh tr th:first-child {
+        width: 30% !important;
+    }
+
+.education-degree-field {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-head-icon {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.span-title {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+hr:first-child {
+    display: none;
+}
+
+.card .header.row div {
+    margin-right: 10px;
+}
+
+.card .header .header-icon {
+    font-size: 2em;
+    margin-top: 5px;
+    color: #28464B;
+}
+
+.card.active-bg h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card.active-bg .u_name h5 {
+    font-size: 1.25em;
+}
+
+.card.active-bg .u_name span.mcCode {
+    font-size: 1.1em;
+}
+
+.education-card {
+    background-color: #28464B;
+}
+
+    .education-card .card-head-icon {
+        color: #9e9e9e;
+    }
+
+    .education-card h2 {
+        font-size: 1.1em;
+        font-weight: 700;
+        color: #9e9e9e;
+        margin-bottom: 5px;
+    }
+
+    .education-card h4 {
+        font-weight: bold;
+        color: #dee2e6;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+.profile-page .profile-header .detail #m_area_chart {
+    height: 200px;
+    margin-bottom: -45px;
+}
+
+
