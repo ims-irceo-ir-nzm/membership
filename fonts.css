@@ -1,0 +1,87 @@
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: 300;
+    src: url('IRANSansWeb(FaNum)_Light.eot');
+    src: url('IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: 900;
+    src: url('IRANSansWeb(FaNum)_Black.eot');
+    src: url('IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_Black.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_Black.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: bold;
+    src: url('IRANSansWeb(FaNum)_Bold.eot');
+    src: url('IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: 500;
+    src: url('IRANSansWeb(FaNum)_Medium.eot');
+    src: url('IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: 300;
+    src: url('IRANSansWeb(FaNum)_Light.eot');
+    src: url('IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: 200;
+    src: url('IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum)_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: normal;
+    src: url('IRANSansWeb(FaNum).eot');
+    src: url('IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('IRANSansWeb(FaNum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('IRANSansWeb(FaNum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('Sahel.eot');
+    src: url('Sahel.eot?#iefix') format('embedded-opentype'),
+    url('Sahel.woff') format('woff'),
+    url('Sahel.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('Sahel-Bold.eot');
+    src: url('Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Sahel-Bold.woff') format('woff'),
+    url('Sahel-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('Sahel-Black.eot');
+    src: url('Sahel-Black.eot?#iefix') format('embedded-opentype'),
+    url('Sahel-Black.woff') format('woff'),
+    url('Sahel-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+
+* {
+    font-family: IRANSansfanum;
+}
