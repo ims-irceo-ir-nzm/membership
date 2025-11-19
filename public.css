@@ -1,0 +1,1412 @@
+/* باشگاه مدیران ایران - استایل‌های عمومی - v1.1 */
+
+/* استایل‌های دکمه‌های شبکه‌های اجتماعی در فوتر */
+.social-buttons .btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+.social-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons .btn i {
+    font-size: 0.9rem;
+}
+
+/* استایل‌های اطلاعات تماس */
+.contact-info a {
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+/* استایل‌های responsive برای دکمه‌های اجتماعی */
+@media (max-width: 768px) {
+    .social-buttons .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* تعریف فونت‌ها */
+@font-face {
+    font-family: 'IRANSans';
+    src: url('IRANSans-web.eot');
+    src: url('IRANSans-web.eot?#iefix') format('embedded-opentype'),
+         url('IRANSans-web.woff2') format('woff2'),
+         url('IRANSans-web.woff') format('woff'),
+         url('IRANSans-web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('IRANSans-web.eot');
+    src: url('IRANSans-web.eot?#iefix') format('embedded-opentype'),
+         url('IRANSans-web.woff2') format('woff2'),
+         url('IRANSans-web.woff') format('woff'),
+         url('IRANSans-web.ttf') format('truetype');
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('IRANSans-web.eot');
+    src: url('IRANSans-web.eot?#iefix') format('embedded-opentype'),
+         url('IRANSans-web.woff2') format('woff2'),
+         url('IRANSans-web.woff') format('woff'),
+         url('IRANSans-web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('IRANSans-web.eot');
+    src: url('IRANSans-web.eot?#iefix') format('embedded-opentype'),
+         url('IRANSans-web.woff2') format('woff2'),
+         url('IRANSans-web.woff') format('woff'),
+         url('IRANSans-web.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* باشگاه مدیران ایران - رنگ‌های برند */
+:root {
+    --club-red-orange: #F90B0B;
+    --club-teal-green: #008073;
+    --club-white: #ffffff;
+    --club-dark: #2c3e50;
+    --club-light-gray: #f8f9fa;
+    --club-gradient-primary: linear-gradient(135deg, #F90B0B 0%, #d00a0a 100%);
+    --club-gradient-secondary: linear-gradient(135deg, #008073 0%, #006b5f 100%);
+    --club-gradient-luxury: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+}
+
+body {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* اطمینان از استفاده از IRANSans در عناصر متنی */
+body, html {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
+/* اطمینان از استفاده از IRANSans در عناصر Bold */
+h1, h2, h3, h4, h5, h6, 
+.fw-bold, .fw-bolder, .fw-normal, .fw-light, .fw-lighter,
+.bold, strong, b,
+.navbar-brand, .btn, .card-title, .alert-heading,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+    font-weight: inherit !important;
+}
+
+/* اطمینان از استفاده از IRANSans برای تمام وزن‌های فونت */
+* {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
+/* تنظیم وزن فونت برای عناصر مختلف */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
+
+.fw-bold, .bold, strong, b {
+    font-weight: 700 !important;
+}
+
+.fw-bolder {
+    font-weight: 800 !important;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.fw-light {
+    font-weight: 300 !important;
+}
+
+.fw-lighter {
+    font-weight: 200 !important;
+}
+
+/* استثنا برای آیکون‌ها */
+.fas, .far, .fab, .fa, [class*="fa-"], i[class*="fa-"] {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-section h1 {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 15;
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.9),
+        0 4px 8px rgba(0, 0, 0, 0.8),
+        0 6px 12px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(255, 215, 0, 0.5),
+        0 0 40px rgba(255, 215, 0, 0.3);
+    /* حذف گرادیان و glow */
+    -webkit-text-fill-color: #ffffff;
+    /* حذف انیمیشن glow */
+    margin-bottom: 20px;
+}
+
+.hero-section h1::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    right: -4px;
+    bottom: -8px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+    border-radius: 20px;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section p {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 15;
+    text-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.9),
+        0 2px 6px rgba(0, 0, 0, 0.8),
+        0 4px 8px rgba(0, 0, 0, 0.7);
+    /* حذف گرادیان و glow */
+    -webkit-text-fill-color: #ffffff;
+    /* حذف انیمیشن glow */
+}
+
+.hero-section p::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    right: -4px;
+    bottom: -8px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+    border-radius: 15px;
+    z-index: -1;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* حذف انیمیشن textGlow */
+
+/* Action Buttons Section */
+.action-buttons-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons-section .btn {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.action-buttons-section .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* سایر بخش‌ها - فقط عناصر متنی */
+.stats-card,
+.event-card,
+.card-title,
+.card-text,
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, button,
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+    font-family: 'IRANSans', 'Vazir', 'Tahoma', sans-serif !important;
+}
+
+/* اطمینان از عدم تأثیر روی آیکون‌ها */
+.navbar-brand i,
+.nav-link i,
+.btn i,
+.card-title i,
+.stats-card i,
+.event-card i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* اطمینان از نمایش آیکون‌ها */
+i[class*="fa-"]:before {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+
+
+/* منوی اصلی */
+.club-navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--club-gradient-primary) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.navbar-nav .dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.navbar-nav .dropdown-divider {
+    margin: 0.5rem 0;
+    border-color: #dee2e6;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Event Cards */
+.event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.event-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.event-card a:hover {
+    color: inherit;
+}
+
+/* Ensure button text color is white in event cards */
+.event-card .btn-primary-custom {
+    color: white !important;
+}
+
+.event-card .btn-primary-custom:hover {
+    color: white !important;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.05);
+}
+
+/* Event Detail Card */
+.event-detail-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.event-header {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.event-info {
+    padding: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 15px;
+}
+
+/* Participants Section */
+.participants-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.participant-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.participant-item:last-child {
+    border-bottom: none;
+}
+
+.participant-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 15px;
+}
+
+/* Manager/Member Cards */
+.manager-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.manager-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background: var(--club-gradient-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(249, 11, 11, 0.3);
+    font-size: 0.95rem;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(249, 11, 11, 0.4);
+    background: linear-gradient(45deg, #d00a0a, #b00909);
+    color: white;
+}
+
+.btn-success {
+    background: var(--club-gradient-secondary) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 128, 115, 0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #006b5f, #005a52) !important;
+    box-shadow: 0 6px 20px rgba(0, 128, 115, 0.4);
+}
+
+.btn-primary {
+    background: var(--club-gradient-primary) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(249, 11, 11, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #d00a0a, #b00909) !important;
+    box-shadow: 0 6px 20px rgba(249, 11, 11, 0.4);
+}
+
+/* Page Header */
+.page-header {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding: 80px 0 40px;
+    margin-bottom: 40px;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: #667eea;
+    border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .page-header {
+        padding: 60px 0 30px;
+    }
+    
+    .stats-card {
+        margin-bottom: 20px;
+    }
+    
+    .event-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Register specific styles */
+.register-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-register {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.validation-feedback {
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.field-status {
+    position: relative;
+}
+
+.status-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.status-valid {
+    color: #28a745;
+}
+
+.status-invalid {
+    color: #dc3545;
+}
+
+.status-checking {
+    color: #ffc107;
+}
+
+/* Mobile dropdown fixes */
+@media (max-width: 991.98px) {
+    .navbar-nav .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        display: none;
+        padding: 0;
+    }
+    
+    .navbar-nav .dropdown-menu.show {
+        display: block !important;
+    }
+    
+    .navbar-nav .dropdown-item {
+        padding: 0.75rem 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        display: block;
+        width: 100%;
+    }
+    
+    .navbar-nav .dropdown-item:hover,
+    .navbar-nav .dropdown-item:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+    
+    .navbar-nav .dropdown-item:last-child {
+        border-bottom: none;
+    }
+    
+    .navbar-nav .dropdown-divider {
+        border-color: rgba(255, 255, 255, 0.1);
+        margin: 0.5rem 0;
+    }
+    
+    .navbar-nav .dropdown-toggle::after {
+        margin-right: 0.5rem;
+        margin-left: 0;
+        float: left;
+    }
+    
+    .navbar-nav .nav-item.dropdown {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-nav .nav-item.dropdown:last-child {
+        border-bottom: none;
+    }
+    
+    /* استایل button های dropdown */
+    .navbar-nav .btn-link {
+        color: rgba(255, 255, 255, 0.9) !important;
+        text-decoration: none;
+        border: none;
+        background: none;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .navbar-nav .btn-link:hover,
+    .navbar-nav .btn-link:focus {
+        color: white !important;
+        background: none;
+        box-shadow: none;
+    }
+    
+    .navbar-nav .btn-link:active {
+        background: none;
+        box-shadow: none;
+    }
+    
+    /* اطمینان از نمایش dropdown */
+    .navbar-nav .dropdown-menu.show {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Footer styles */
+.club-footer {
+    background: var(--club-gradient-secondary) !important;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0 !important;
+}
+
+.club-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    pointer-events: none;
+}
+
+.footer-logo {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+footer h5 {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+footer .text-light {
+    color: #e9ecef !important;
+}
+
+footer a {
+    color: #e9ecef !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* News Styles */
+.news-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.news-card .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.news-icon {
+    color: var(--club-red-orange);
+    margin-bottom: 1rem;
+}
+
+.news-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.news-card .card-text {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+    text-align: right;
+    direction: rtl;
+}
+
+.news-card .card-text p {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.news-card .card-text a {
+    color: var(--club-red-orange);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.news-card .card-text a:hover {
+    color: var(--club-red-orange);
+    text-decoration: underline;
+}
+
+.news-card .btn {
+    align-self: center;
+    margin-top: auto;
+}
+
+/* Membership Benefits Styles */
+.benefit-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.benefit-card-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 120px;
+}
+
+.benefit-image {
+    height: 120px;
+    width: 160px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    padding: 10px;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.benefit-card:hover .benefit-image img {
+    transform: scale(1.05);
+}
+
+.no-image {
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.benefit-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120px;
+    padding-top: 1.25rem;
+    flex: 1;
+    padding-right: 0;
+}
+
+.benefit-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+
+.benefit-text {
+    color: #6c757d;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    text-align: right;
+    direction: rtl;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.benefit-text p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.benefit-text a {
+    color: var(--club-red-orange);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.benefit-text a:hover {
+    color: var(--club-red-orange);
+    text-decoration: underline;
+}
+
+.news-card .card-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-card .card-title a:hover {
+    color: var(--bs-primary);
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.news-meta {
+    font-size: 0.875rem;
+}
+
+.news-meta .badge {
+    font-size: 0.75rem;
+}
+
+.news-detail {
+    line-height: 1.8;
+}
+
+.news-detail h1, 
+.news-detail h2, 
+.news-detail h3, 
+.news-detail h4, 
+.news-detail h5, 
+.news-detail h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.news-detail p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.news-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.news-teaser .alert {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-left: 4px solid var(--bs-primary);
+    background: #f8f9fa;
+}
+
+.comment-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.comment-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.related-post:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.category-filter .btn {
+    border-radius: 20px;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+}
+
+.pagination .page-link {
+    border-radius: 0.375rem;
+    margin: 0 0.125rem;
+    color: var(--bs-primary);
+    border-color: #dee2e6;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.sidebar .card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.list-group-item.active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+    color: white;
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    pointer-events: none;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header .breadcrumb {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-header .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.page-header .breadcrumb-item a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.page-header .breadcrumb-item.active {
+    color: white;
+    font-weight: 600;
+}
+
+
+/* Member Profile Styles */
+.member-basic-info .member-id,
+.member-basic-info .member-position,
+.member-basic-info .member-industry,
+.member-basic-info .member-field,
+.member-basic-info .member-location {
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.member-basic-info .member-id i,
+.member-basic-info .member-position i,
+.member-basic-info .member-industry i,
+.member-basic-info .member-field i,
+.member-basic-info .member-location i {
+    color: #6c757d;
+    width: 16px;
+}
+
+.member-basic-info .member-id strong,
+.member-basic-info .member-position strong,
+.member-basic-info .member-industry strong,
+.member-basic-info .member-field strong,
+.member-basic-info .member-location strong {
+    color: #343a40;
+    font-weight: 600;
+}
+
+/* Featured News Section - طلایی کمرنگ */
+.featured-news-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-news-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    pointer-events: none;
+}
+
+.featured-news-section h2 {
+    color: #2c3e50 !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.featured-news-section .news-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Membership Benefits Section - سفید ساده */
+.membership-benefits-section {
+    background: #ffffff;
+    position: relative;
+}
+
+.membership-benefits-section h2 {
+    color: #F90B0B !important;
+}
+
+.membership-benefits-section .benefit-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.membership-benefits-section .benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #F90B0B;
+}
+
+/* Stats Section - خاکستری ملایم */
+.stats-section {
+    background: #f8f9fa;
+    position: relative;
+}
+
+.stats-section h2 {
+    color: #2c3e50 !important;
+}
+
+.stats-section .stats-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.stats-section .stats-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #008073;
+}
+
+
+
+/* Event Cards */
+.event-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.event-card .card-body {
+    padding: 1.5rem;
+}
+
+.event-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+}
+
+.event-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    min-height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.event-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.event-link:hover {
+    text-decoration: none;
+    color: inherit;
+    transform: scale(1.02);
+}
+
+.event-link:hover .card-title {
+    color: #008073;
+}
+
+.event-card .card-footer {
+    background: transparent;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+}
+
+/* Copyright Row - کل ردیف کپی‌رایت */
+.copyright-row {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* حذف padding اضافی از container فوتر */
+.club-footer .container {
+    padding-bottom: 0;
+}
+
+/* Membership Promotion Section */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #F90B0B 0%, #d00a0a 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-gradient-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    pointer-events: none;
+}
+
+.membership-cta {
+    position: relative;
+    z-index: 2;
+}
+
+.membership-cta .cta-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.membership-cta .btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.membership-cta .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-image img {
+        height: 150px;
+    }
+    
+    .news-card .card-body {
+        padding: 1rem;
+    }
+    
+    .category-filter .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .benefit-card-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .benefit-image {
+        height: 100px;
+        width: 140px;
+        padding: 8px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .benefit-content {
+        padding: 1rem;
+        min-height: auto;
+        padding-right: 1rem;
+    }
+    
+    .membership-cta {
+        margin-top: 2rem;
+    }
+    
+    .membership-cta .btn {
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+    }
+}
