@@ -6,176 +6,176 @@
 
 @font-face {
   font-family: 'IranNastaliq';
-  src: url('../fonts/IranNastaliq.eot');
-  src: url('../fonts/IranNastaliq.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/IranNastaliq.woff2') format('woff2'),
-      url('../fonts/IranNastaliq.woff') format('woff'),
-      url('../fonts/IranNastaliq.ttf') format('truetype');
+  src: url('IranNastaliq.eot');
+  src: url('IranNastaliq.eot?#iefix') format('embedded-opentype'),
+      url('IranNastaliq.woff2') format('woff2'),
+      url('IranNastaliq.woff') format('woff'),
+      url('IranNastaliq.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "web-vazir";
-  src: url("../fonts/vazir-fd-wl.eot");
+  src: url("vazir-fd-wl.eot");
   /* IE */
-  src: url("../fonts/vazir-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("vazir-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/vazir-fd-wl.woff2") format("woff2"),
+    url("vazir-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/vazir-fd-wl.woff") format("woff"),
+    url("vazir-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/vazir-fd-wl.ttf") format("truetype");
+    url("vazir-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-vazir";
-  src: url("../fonts/vazir-bold-fd-wl.eot");
+  src: url("vazir-bold-fd-wl.eot");
   /* IE */
-  src: url("../fonts/vazir-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("vazir-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/vazir-bold-fd-wl.woff2") format("woff2"),
+    url("vazir-bold-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/vazir-bold-fd-wl.woff") format("woff"),
+    url("vazir-bold-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/vazir-bold-fd-wl.ttf") format("truetype");
+    url("vazir-bold-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: bold;
 }
 
 @font-face {
   font-family: "web-vazir";
-  src: url("../fonts/vazir-light-fd-wl.eot");
+  src: url("vazir-light-fd-wl.eot");
   /* IE */
-  src: url("../fonts/vazir-light-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("vazir-light-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/vazir-light-fd-wl.woff2") format("woff2"),
+    url("vazir-light-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/vazir-light-fd-wl.woff") format("woff"),
+    url("vazir-light-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/vazir-light-fd-wl.ttf") format("truetype");
+    url("vazir-light-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: 200;
 }
 
 @font-face {
   font-family: "web-sahel";
-  src: url("../fonts/sahel-fd-wl.eot");
+  src: url("sahel-fd-wl.eot");
   /* IE */
-  src: url("../fonts/sahel-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("sahel-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/sahel-fd-wl.woff2") format("woff2"),
+    url("sahel-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/sahel-fd-wl.woff") format("woff"),
+    url("sahel-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/sahel-fd-wl.ttf") format("truetype");
+    url("sahel-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-sahel";
-  src: url("../fonts/sahel-bold-fd-wl.eot");
+  src: url("sahel-bold-fd-wl.eot");
   /* IE */
-  src: url("../fonts/sahel-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("sahel-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/sahel-bold-fd-wl.woff2") format("woff2"),
+    url("sahel-bold-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/sahel-bold-fd-wl.woff") format("woff"),
+    url("sahel-bold-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/sahel-bold-fd-wl.ttf") format("truetype");
+    url("sahel-bold-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: bold;
 }
 
 @font-face {
   font-family: "web-myriad";
-  src: url("../fonts/myriad-fd-wl-ext.eot");
+  src: url("myriad-fd-wl-ext.eot");
   /* IE */
-  src: url("../fonts/myriad-fd-wl-ext.eot?#iefix") format("embedded-opentype"),
+  src: url("myriad-fd-wl-ext.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/myriad-fd-wl-ext.woff2") format("woff2"),
+    url("myriad-fd-wl-ext.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/myriad-fd-wl-ext.woff") format("woff"),
+    url("myriad-fd-wl-ext.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/myriad-fd-wl-ext.ttf") format("truetype");
+    url("myriad-fd-wl-ext.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-droid";
-  src: url("../fonts/droid-naskh-nd-wl.eot");
+  src: url("droid-naskh-nd-wl.eot");
   /* IE */
-  src: url("../fonts/droid-naskh-nd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("droid-naskh-nd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/droid-naskh-nd-wl.woff2") format("woff2"),
+    url("droid-naskh-nd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/droid-naskh-nd-wl.woff") format("woff"),
+    url("droid-naskh-nd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/droid-naskh-nd-wl.ttf") format("truetype");
+    url("droid-naskh-nd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-yekan";
-  src: url("../fonts/yekan-fd-wol.eot");
+  src: url("yekan-fd-wol.eot");
   /* IE */
-  src: url("../fonts/yekan-fd-wol.eot?#iefix") format("embedded-opentype"),
+  src: url("yekan-fd-wol.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/yekan-fd-wol.woff2") format("woff2"),
+    url("yekan-fd-wol.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/yekan-fd-wol.woff") format("woff"),
+    url("yekan-fd-wol.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/yekan-fd-wol.ttf") format("truetype");
+    url("yekan-fd-wol.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-shabnam";
-  src: url("../fonts/shabnam-fd-wl.eot");
+  src: url("shabnam-fd-wl.eot");
   /* IE */
-  src: url("../fonts/shabnam-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("shabnam-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/shabnam-fd-wl.woff2") format("woff2"),
+    url("shabnam-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/shabnam-fd-wl.woff") format("woff"),
+    url("shabnam-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/shabnam-fd-wl.ttf") format("truetype");
+    url("shabnam-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: normal;
 }
 
 @font-face {
   font-family: "web-shabnam";
-  src: url("../fonts/shabnam-bold-fd-wl.eot");
+  src: url("shabnam-bold-fd-wl.eot");
   /* IE */
-  src: url("../fonts/shabnam-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("shabnam-bold-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/shabnam-bold-fd-wl.woff2") format("woff2"),
+    url("shabnam-bold-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/shabnam-bold-fd-wl.woff") format("woff"),
+    url("shabnam-bold-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/shabnam-bold-fd-wl.ttf") format("truetype");
+    url("shabnam-bold-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: bold;
 }
 
 @font-face {
   font-family: "web-shabnam";
-  src: url("../fonts/shabnam-light-fd-wl.eot");
+  src: url("shabnam-light-fd-wl.eot");
   /* IE */
-  src: url("../fonts/shabnam-light-fd-wl.eot?#iefix") format("embedded-opentype"),
+  src: url("shabnam-light-fd-wl.eot?#iefix") format("embedded-opentype"),
     /* IE */
-    url("../fonts/shabnam-light-fd-wl.woff2") format("woff2"),
+    url("shabnam-light-fd-wl.woff2") format("woff2"),
     /* Modern Browsers */
-    url("../fonts/shabnam-light-fd-wl.woff") format("woff"),
+    url("shabnam-light-fd-wl.woff") format("woff"),
     /* Modern Browsers */
-    url("../fonts/shabnam-light-fd-wl.ttf") format("truetype");
+    url("shabnam-light-fd-wl.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: 200;
 }
