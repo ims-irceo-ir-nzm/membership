@@ -1,0 +1,20 @@
+﻿.modal.modal-wide .modal-dialog {
+    width: 90%;
+}
+
+.modal-wide .modal-body {
+    max-height: 1000px;
+}
+
+/*body {
+    text-align: center;
+}
+
+    body p {
+        max-width: 400px;
+        margin: 20px auto;
+    }*/
+
+#wideModal .modal-body p {
+            margin-bottom: 900px;
+        }

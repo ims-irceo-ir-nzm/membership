@@ -1,0 +1,56 @@
+﻿
+
+function ClearqueryString() {
+    var uri = window.location.toString();
+    if (uri.indexOf("?") > 0) {
+        var clean_uri = uri.substring(0, uri.indexOf("?"));
+        window.history.replaceState({}, document.title, clean_uri);
+    }
+}
+
+$(function () {
+    //  $('nav#menu').mmenu();
+    var $menu = $('nav#menu'),
+      $html = $('html, body');
+
+    $menu.mmenu({
+        dragOpen: true,
+        // slidingSubmenus: true
+        extensions: ["border-none", "leftsubpanels"],
+        navbar: { add: true, title: "سامانه صدور پروانه ها", titleLink: "" },
+        /*added by karimi for right to left menu*/
+        offCanvas: {
+            position: "right",
+            //zposition: "front"
+        },
+        // searchfield: true ,
+        searchfield: {
+            add: true,
+            noResults: "موردی یافت نشد",
+            placeholder: "جستجو",
+            showSubPanels: true,
+            search: true,
+        }
+
+    });
+});
+
+function btnMenuClick(pagePath) {
+    $("#ifrmTest").attr("src", pagePath);
+}
+
+function logOut() {
+    alert("log out...");
+}
+
+/* for start help(intro js)*/
+function ShowHelp() {
+    lsbridge.send('showHelp', { message: 'show' });
+}
+
+
+$(document).ready(function () {
+    //for to top
+    $("#pageup").pageup();
+
+});

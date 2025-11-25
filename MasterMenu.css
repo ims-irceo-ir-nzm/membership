@@ -1,0 +1,126 @@
+﻿.header,
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+}
+
+/*.mm-menu{
+            width:32% !important;
+        }*/
+
+.header {
+    top: 0;
+    /*background: #5ea9dd;*/
+    background: #0097ff;
+    border-bottom: solid 4px #0088e6;
+}
+
+.footer {
+    bottom: 0;
+}
+/*added by karimi for right to left menu*/
+.header a {
+    /*position:absolute !important;
+            top:0px !important;*/
+    right: 10px !important;
+    left: 95% !important;
+}
+
+/*added for top menu bottun color*/
+.btn-custom:hover {
+    background: rgba(235, 235, 235, 1);
+    border-color: rgba(173, 173, 173, 1);
+    color: rgba(51, 51, 51, 1);
+}
+
+.btn-custom:active, .btn-custom:focus {
+    background: rgba(64, 237, 237, 1);
+    border-color: rgba(173, 173, 173, 1);
+    color: rgba(51, 51, 51, 1);
+}
+
+.btn-custom.active {
+    background: rgba(64, 237, 237, 1);
+    border-color: rgba(173, 173, 173, 1);
+    color: rgba(51, 51, 51, 1);
+}
+/*for change the direction of > in submenus*/
+.mm-listview .mm-next {
+    right: 83% !important;
+}
+
+.mm-next::after {
+    transform: rotate(-225deg) !important;
+}
+
+.mm-prev::before {
+    transform: rotate(-225deg) !important;
+}
+
+.mm-navbar .mm-btn:first-child {
+    left: 83%;
+}
+
+.mm-navbar .mm-btn:last-child {
+    right: 83%;
+}
+/*change menu title font*/
+.mm-title {
+    font-family: B_Yekan;
+}
+/*change menu width*/
+html.mm-right.mm-opening .mm-slideout {
+    transform: translate(-280px, 0px) !important;
+}
+/*chang menu elemnt position*/
+.mm-listview .mm-next + a {
+    margin-right: 0px;
+}
+
+.mm-listview > li > a:hover {
+    cursor: pointer;
+}
+
+.mm-listview > li > a {
+    text-align: right;
+}
+
+.mm-listview .mm-divider {
+    font-size: 18px;
+    border: solid 1px #b8dcf5;
+    padding: 5px 0 5px 0;
+    background-color: #e2e2e2;
+    margin-right: -35px;
+    color: #000000;
+}
+
+    .mm-listview .mm-divider:hover {
+            font-size: 18px;
+    border: solid 1px #b8dcf5;
+    padding: 5px 0 5px 0;
+    background-color: #e2e2e2;
+    }
+
+#intro,
+#first,
+#second,
+#third {
+    height: 400px;
+}
+
+#intro {
+    padding-top: 0;
+}
+
+#first,
+#second,
+#third {
+    border-top: 1px solid #ccc;
+    padding-top: 150px;
+}
+
+li {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}

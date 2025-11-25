@@ -1,0 +1,69 @@
+﻿  var currentModal;
+  function openModal(modalType, src, title, width) {
+            switch (modalType) {
+                case 0:
+                    $("#NormalmodalIFrame").attr("src", src);
+                    $("#spnNormalModalTitle").text(title);
+                    $('#NormalModal').modal({ backdrop: 'static', keyboard: false });
+                    $("#NormalModal").modal("show");
+                    currentModal = '#NormalModal';
+                    if (width==undefined ||width == "") {                 
+                        $(".modal-dialog").css("width", "1050px");
+                    }
+                    else {
+                        $(".modal-dialog").css("width", width);
+                    }
+                    break;
+                case 1:
+                    $("#wideModalIframe").attr("src", src);
+                    $("#spnWideModalTitle").text(title);
+                    $('#wideModal').modal({ backdrop: 'static', keyboard: false });
+                    $("#wideModal").modal("show");
+                    currentModal = '#wideModal';
+                    break;
+            }
+            iFrameResize({ log: true, checkOrigin: false });
+  }
+
+  function openModalWithRefresh(modalType, src, title, refreshButtonClientId, width) {
+      switch (modalType) {
+          case 0:
+              if (refreshButtonClientId != undefined && refreshButtonClientId != "") {
+                  sessionStorage.setItem("ModalClosingRefreshButtonClientId", refreshButtonClientId);
+              }
+              $("#NormalmodalIFrame").attr("src", src);
+              $("#spnNormalModalTitle").text(title);
+              $('#NormalModal').modal({ backdrop: 'static', keyboard: false });
+              $("#NormalModal").modal("show");
+              currentModal = '#NormalModal';
+              if (width == undefined || width == "") {
+                  $(".modal-dialog").css("width", "1050px");
+              }
+              else {
+                  $(".modal-dialog").css("width", width);
+              }
+              break;
+          case 1:
+              $("#wideModalIframe").attr("src", src);
+              $("#spnWideModalTitle").text(title);
+              $('#wideModal').modal({ backdrop: 'static', keyboard: false });
+              $("#wideModal").modal("show");
+              currentModal = '#wideModal';
+              break;
+      }
+      iFrameResize({ log: true, checkOrigin: false });
+  }
+  function closeModal() {
+            var refreshButtonClientId = sessionStorage.getItem("ModalClosingRefreshButtonClientId");
+            if (refreshButtonClientId!=undefined && refreshButtonClientId != "") {
+                sessionStorage.removeItem("OnModalClose");
+                ssbridge.send('OnModalClose', {
+                    BTNRefreshClientId: refreshButtonClientId
+                });
+            }
+            sessionStorage.removeItem("ModalClosingRefreshButtonClientId");
+            $(currentModal).modal('hide');
+            window.parent.currentModal = undefined;
+  }
+
+  

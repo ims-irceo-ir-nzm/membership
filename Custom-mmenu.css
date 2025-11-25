@@ -1,0 +1,79 @@
+﻿/* custom-menu.css */
+.mm-menu {
+  width: 280px;
+  min-width: 140px;
+  max-width: 440px; }
+
+html.mm-opening .mm-slideout {
+  -webkit-transform: translate(280px, 0);
+  -moz-transform: translate(280px, 0);
+  -ms-transform: translate(280px, 0);
+  -o-transform: translate(280px, 0);
+  transform: translate(280px, 0); }
+
+@media all and (max-width: 500px) {
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(140px, 0);
+    -moz-transform: translate(140px, 0);
+    -ms-transform: translate(140px, 0);
+    -o-transform: translate(140px, 0);
+    transform: translate(140px, 0); } }
+@media all and (min-width: 1571.42857px) {
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(440px, 0);
+    -moz-transform: translate(440px, 0);
+    -ms-transform: translate(440px, 0);
+    -o-transform: translate(440px, 0);
+    transform: translate(440px, 0); } }
+
+.mm-menu {
+  background: #f8f8f8;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7); }
+  .mm-menu .mm-navbar > *,
+  .mm-menu .mm-navbar a {
+    color: rgba(0, 0, 0, 0.3); }
+  .mm-menu .mm-navbar .mm-btn:before, .mm-menu .mm-navbar .mm-btn:after {
+    border-color: rgba(0, 0, 0, 0.3); }
+  .mm-menu .mm-listview {
+    border-color: rgba(0, 0, 0, 0.1); }
+    .mm-menu .mm-listview > li .mm-next:after,
+    .mm-menu .mm-listview > li .mm-arrow:after {
+      border-color: rgba(0, 0, 0, 0.3); }
+    .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+    .mm-menu .mm-listview > li.mm-selected > span {
+      background: rgba(255, 255, 255, 0.5); }
+  .mm-menu.mm-vertical .mm-listview > li.mm-opened > a.mm-next,
+  .mm-menu.mm-vertical .mm-listview > li.mm-opened > .mm-panel,
+  .mm-menu .mm-listview > li.mm-opened.mm-vertical > a.mm-next,
+  .mm-menu .mm-listview > li.mm-opened.mm-vertical > .mm-panel {
+    background: rgba(0, 0, 0, 0.05); }
+  .mm-menu .mm-divider {
+    background: rgba(0, 0, 0, 0.05); 
+  }
+  
+  /*.mm-menu {
+  background: #f8f8f8;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7); }
+  .mm-menu .mm-navbar > *,
+  .mm-menu .mm-navbar a {
+    color: #0a71bd; }
+  .mm-menu .mm-navbar .mm-btn:before, .mm-menu .mm-navbar .mm-btn:after {
+    border-color: #0a71bd; }
+  .mm-menu .mm-listview {
+    border-color: rgba(0, 0, 0, 0.1); }
+    .mm-menu .mm-listview > li .mm-next:after,
+    .mm-menu .mm-listview > li .mm-arrow:after {
+      border-color: #0a71bd; }
+    .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+    .mm-menu .mm-listview > li.mm-selected > span {
+      background: #007acc; }
+  .mm-menu.mm-vertical .mm-listview > li.mm-opened > a.mm-next,
+  .mm-menu.mm-vertical .mm-listview > li.mm-opened > .mm-panel,
+  .mm-menu .mm-listview > li.mm-opened.mm-vertical > a.mm-next,
+  .mm-menu .mm-listview > li.mm-opened.mm-vertical > .mm-panel {
+    background: #0094ff; }
+  .mm-menu .mm-divider {
+    background: #0094ff; }*/
+/*# sourceMappingURL=Custom-mmenu.css.map */

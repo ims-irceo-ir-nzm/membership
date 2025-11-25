@@ -1,0 +1,39 @@
+﻿
+function breadCrumbClick(url,index) {
+    var breadCrumbInfo = sessionStorage.getItem("ApplicationBreadCrumbInfo");
+    breadCrumbInfo = JSON.parse(breadCrumbInfo);
+    breadCrumbInfo.splice(index, breadCrumbInfo.length);
+    sessionStorage.setItem("ApplicationBreadCrumbInfo", JSON.stringify(breadCrumbInfo));
+}
+
+function addBreadCrumb(name) {
+    if (name == undefined) {
+        name = document.title;
+    }
+    if (window.parent.currentModal == undefined) {
+        ssbridge.send('PageName', { name: name, url: window.location.href.toString() });
+    }
+}
+
+function resetBreadCrumb() {
+    var breadCrumbInfo = sessionStorage.getItem("ApplicationBreadCrumbInfo");
+    breadCrumbInfo = JSON.parse(breadCrumbInfo);
+    if (breadCrumbInfo!=undefined && breadCrumbInfo.length != 0) {
+        breadCrumbInfo.splice(0, breadCrumbInfo.length);
+        sessionStorage.setItem("ApplicationBreadCrumbInfo", JSON.stringify(breadCrumbInfo));
+    }
+}
+
+$(window).resize(function () {
+
+    if ($(this).width() < 768) {
+
+        $('.divNavigation').hide();
+
+    } else {
+
+        $('.divNavigation').show();
+
+    }
+
+});
