@@ -1,292 +1,365 @@
-.rtl {
-  direction: rtl;
-  text-align: right; }
-  .rtl ul {
-    padding-right: 0; }
-  .rtl ul.nav-tabs {
-    padding: 15px 0 15px .7rem; }
-  .rtl .ml-auto {
-    margin-right: auto !important;
-    margin-left: unset !important; }
-  .rtl .text-right {
-    text-align: left !important; }
-  .rtl .float-right {
-    float: left !important; }
-  .rtl .float-left {
-    float: right !important; }
-  .rtl .modal-footer > :not(:last-child) {
-    margin-left: .25rem; }
-  .rtl .m-r-15 {
-    margin-left: 15px;
-    margin-right: 0; }
-  .rtl .right-sidebar {
-    left: -300px; }
-    .rtl .right-sidebar.open {
-      left: 0;
-      right: auto; }
-  .rtl .input-group {
-    direction: ltr; }
-    .rtl .input-group .form-control {
-      direction: rtl; }
 
-/* top headre scss */
-.rtl.overlay-open .sidebar {
-  margin-right: 0px; }
-.rtl .navbar-logo {
-  float: right; }
-  .rtl .navbar-logo span {
-    margin-left: 0;
-    margin-right: 10px; }
-.rtl .navbar-nav {
-  float: left; }
-  .rtl .navbar-nav li.app_menu .dropdown-menu,
-  .rtl .navbar-nav .profile .dropdown-menu {
-    left: 0;
-    right: auto; }
-  .rtl .navbar-nav li.notifications .media .media-body {
-    margin-left: 0;
-    margin-right: 10px; }
-    .rtl .navbar-nav li.notifications .media .media-body .name .time {
-      float: left; }
-  .rtl .navbar-nav .profile .user-info a i {
-    float: none !important; }
-  .rtl .navbar-nav .profile .dropdown-menu a i {
-    float: right;
-    line-height: 24px; }
-.rtl .dropdown-menu .header {
-  text-align: right; }
-.rtl .dropdown-menu ul.menu.tasks h4 small {
-  float: left; }
-.rtl .dropdown-menu ul.menu .menu-info {
-  margin-right: 10px;
-  margin-left: 0;
-  text-align: right; }
-.rtl .dropdown-menu ul.menu li a {
-  text-align: right; }
+@import url('DBS-Fonts.css');
+@import url('DBS-Shortcode-RTL.css');
+@import url('DBS-Page-Template-RTL.css');
 
-/* left menu scss */
-.rtl .sidebar .menu .list .header:before {
-  left: auto;
-  right: 0; }
-.rtl .sidebar .menu .list a:before {
-  left: auto;
-  right: 0; }
-.rtl .sidebar .menu .list .menu-toggle:before, .rtl .sidebar .menu .list .menu-toggle:after {
-  right: auto;
-  left: 0; }
-.rtl .sidebar .menu .list a span {
-  margin: 0  12px 0 0; }
-.rtl .sidebar .menu .list a i {
-  float: right;
-  line-height: 24px; }
-.rtl .sidebar .menu .list .ml-menu li a {
-  padding-right: 40px;
-  padding-left: 10px; }
-  .rtl .sidebar .menu .list .ml-menu li a::before {
-    content: '\f30f';
-    right: 14px;
-    left: auto;
-    transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1); }
-.rtl .sidebar.h_menu .menu li .ml-menu:before, .rtl .sidebar.h_menu .menu li .ml-menu:after {
-  right: 28px;
-  left: auto; }
-.rtl .sidebar.h_menu .menu li .ml-menu li a {
-  margin: 0; }
-  .rtl .sidebar.h_menu .menu li .ml-menu li a::before {
-    right: 24px; }
-.rtl .sidebar.h_menu .menu li:last-child .ml-menu:before, .rtl .sidebar.h_menu .menu li:last-child .ml-menu:after {
-  left: 28px;
-  right: auto; }
+input, textarea, select { font-family: Tahoma; }
 
-/* right menu scss */
-.rtl .right-sidebar #settings .setting-list li .switch {
-  left: 5px;
-  right: auto; }
+/*------------------------------------------------*/
+/*-----------------[BASIC STYLES]-----------------*/
+/*------------------------------------------------*/
 
-/* RTL Dashboard scss */
-.rtl .card .header h2 {
-  text-align: right; }
-  .rtl .card .header h2::before {
-    left: auto;
-    right: 0; }
-.rtl .card .header .header-dropdown {
-  right: auto;
-  left: 10px; }
-  .rtl .card .header .header-dropdown ul.dropdown-menu {
-    left: 0 !important;
-    right: auto !important; }
-.rtl .table thead tr th, .rtl .table thead tr td {
-  text-align: right; }
-.rtl .checkbox label {
-  padding-right: 35px;
-  padding-left: 0px; }
-  .rtl .checkbox label:before, .rtl .checkbox label:after {
-    right: 0;
-    left: auto; }
-.rtl .has-success:after, .rtl .has-danger:after {
-  bottom: 14px; }
-.rtl .alert .alert-icon {
-  float: right; }
-.rtl .progress-container .progress .progress-value {
-  left: 0;
-  right: auto; }
-.rtl .block-header .nav-tabs {
-  float: left; }
-.rtl .media.mright .media-body {
-  text-align: left; }
-.rtl .dtp > .dtp-content {
-  right: 50%;
-  left: auto;
-  margin-right: -150px;
-  margin-left: 0; }
-.rtl .bootstrap-select.btn-group .dropdown-toggle .filter-option {
-  text-align: right; }
-.rtl .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
-  margin-left: 34px;
-  margin-right: 0; }
-.rtl .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
-  left: 15px;
-  right: auto; }
+body { font-family: Tahoma !important; direction: rtl; }
 
-/* widget scss */
-.rtl .chat-widget li.right {
-  float: left;
-  text-align: left; }
-  .rtl .chat-widget li.right img {
-    float: left; }
-.rtl .follow_us .media .status {
-  right: 25px;
-  left: auto; }
-.rtl .follow_us .media .media-object {
-  margin-right: 0;
-  margin-left: 10px; }
-.rtl .bitcoin .body {
-  width: 100%;
-  text-align: left; }
-.rtl .inbox .mail_list .unread {
-  border-right: 2px solid;
-  border-left: none; }
-.rtl .inbox .mail_list .list-group-item .controls {
-  margin-right: 0px;
-  margin-left: 10px; }
-  .rtl .inbox .mail_list .list-group-item .controls .favourite {
-    margin-right: 10px;
-    margin-left: 0px; }
-.rtl .chat-app .chat .chat-header img {
-  float: right; }
-.rtl .chat-app .chat .chat-header .chat-about {
-  float: right;
-  padding-right: 10px;
-  padding-left: 0px; }
-.rtl .chat-app .chat .chat-history .message:after {
-  right: 20px;
-  left: auto; }
-.rtl .chat-app .chat .chat-history .other-message:after {
-  left: 20px;
-  right: auto; }
-.rtl .chat-app .people-list img {
-  float: right; }
-.rtl .chat-app .people-list .about {
-  float: right;
-  padding-right: 8px;
-  padding-left: 0; }
-.rtl .page-calendar .event-name {
-  border-left: none;
-  border-right: 3px solid; }
-.rtl .file_manager .file .file-name {
-  padding: 10px 20px; }
-  .rtl .file_manager .file .file-name small .date {
-    float: left; }
-.rtl .blog-page .single_post .meta li {
-  margin-left: 15px;
-  margin-right: 0; }
-  .rtl .blog-page .single_post .meta li a i {
-    margin-left: 6px;
-    margin-right: 0; }
-.rtl .blog-page .right-box .instagram-plugin li {
-  float: right; }
-.rtl .blog-page .comment-reply .list-inline li {
-  padding-left: 20px;
-  padding-right: 0; }
-.rtl div.dataTables_wrapper div.dataTables_filter {
-  text-align: left; }
-.rtl .inbox-widget .inbox-inner .inbox-img {
-  float: right; }
-.rtl .inbox-widget .inbox-inner .inbox-item-info {
-  margin-right: 75px;
-  margin-left: 0; }
-.rtl .widget-user img {
-  float: right; }
-.rtl .widget-user .wid-u-info {
-  margin-right: 90px;
-  margin-left: 0; }
-.rtl .profile-page .profile-header .detail {
-  margin-right: 250px;
-  margin-left: 0; }
-.rtl .timeline-item {
-  border-right: 1px solid #e4e4e4;
-  border-left: none; }
-  .rtl .timeline-item:before {
-    right: 2em;
-    left: auto; }
-  .rtl .timeline-item::after {
-    right: -8px;
-    left: auto; }
-.rtl .widget_2 li {
-  border-left: 1px solid #eee;
-  border-right: none; }
-  .rtl .widget_2 li .text-right {
-    text-align: left !important; }
-  .rtl .widget_2 li .text-small {
-    font-size: 14px; }
-.rtl #line_chart {
-  height: 375px !important; }
-.rtl .team-info li + li {
-  z-index: 99;
-  position: relative; }
-.rtl .activity li a i {
-  float: right; }
-.rtl .activity li a .info {
-  margin-right: 50px;
-  margin-left: 0px; }
+h1, h2, h3, h4, h5, h6 { font-family: 'DBS-BYekan', B Yekan, Tahoma; }
 
-.rtl .c_review .avatar {
-  float: right; }
-.rtl .product-report .icon {
-  float: right;
-  margin-right: 0;
-  margin-left: 15px; }
-.rtl .ecommerce-page .nav.nav-tabs {
-  padding: 15px .7rem; }
-.rtl .ecommerce-page .details .colors .color:first-of-type {
-  margin-left: 0;
-  margin-right: 20px; }
-.rtl .ecommerce-page .details .sizes .size {
-  display: inline-block; }
-.rtl .ecommerce-page .details .sizes .size:first-of-type {
-  margin-left: 0;
-  margin-right: 40px; }
+h2 { font-size: 22px; }
 
-@media screen and (max-width: 1169px) {
-  .rtl.ls-closed .bars:after,
-  .rtl.ls-closed .bars:before {
-    right: 10px;
-    left: auto; }
+h3 { font-size: 20px; }
 
-  .rtl .navbar > .container .navbar-brand,
-  .rtl .navbar > .container-fluid .navbar-brand {
-    margin-right: 20px;
-    margin-left: 0; } }
-.m-r-10 {
-  margin-left: 10px; }
+h4 { font-size: 18px; }
 
-@media screen and (max-width: 767px) {
-  .rtl.ls-closed .bars:after, .rtl.ls-closed .bars:before {
-    margin-right: 0; }
+h5 { font-size: 16px; }
 
-  .rtl .navbar .navbar-left .task .dropdown-menu {
-    right: -70px; } }
+dd  { margin-right: 1.5em; margin-left: 0;}
 
-/*# sourceMappingURL=rtl.css.map */
+blockquote  { margin: 2px 40px 13px 0; font: normal 13px/1.5 'DBS-BYekan', B Yekan, Tahoma; }
+
+blockquote p { padding: 0px 20px 0px 0px; background: url(blockquote.png) no-repeat right 3px; }
+
+img#about-image { float: right; margin: 3px 0px 8px 8px; }
+
+ul.nav li a { font: normal 13px 'DBS-BYekan', B Yekan, Tahoma; }
+/*------------------------------------------------*/
+/*---------------[MAIN LAYOUT INFO]---------------*/
+/*------------------------------------------------*/
+
+.container { text-align: right; }
+
+#header .container { background-position: right 0; }
+
+img#logo { float: right; margin: 20px 30px 0px 27px; }
+		
+a#search-icon { left: 2000px; right: auto; padding: 0 31px 0 0px; }
+
+#searchinput { font: 11px Tahoma !important; }
+
+#services { padding-right: 20px; padding-left: 0; background-position: 35px top; }
+
+#services .one-third { background-position: top right; float: right; padding: 31px 81px 0px 30px; }
+
+#services img.icon { right: 33px; left: auto; }
+
+#services h4.title { font: 19px/1.3 'DBS-BKoodakBold', B Koodak, Tahoma; }
+
+#services a.readmore, .entry a.readmore { float: left; background-position: top left; padding-left: 11px; padding-right: 0; }
+
+#services a.readmore span, .entry a.readmore span { padding: 0px 15px 4px 3px; background-position:top right; font: normal 13px/1.5 'DBS-BYekan', B Yekan, Tahoma; }
+
+#services a.readmore:hover, .entry a.readmore:hover { background-position: bottom left; }
+
+#services a.readmore:hover span, .entry a.readmore:hover span { background-position: bottom right; }
+	
+#content-area { float: right; margin: 25px 30px 0px 0px; }
+
+#content-area ul { margin: 10px 20px 10px 0px; }
+
+#content-area ol { margin: 10px 2px 10px 0px; }
+
+#content-area ul li ul, #content-area ul li ol { margin: 2px 20px 2px 0px; }
+
+#content-area ol li ul, #content-area ol li ol  { margin: 2px 35px 2px 0px; }
+	
+body#home #content-area { margin: 0px 50px 0px 0px; }
+	
+h3#slogan { background-position:44px bottom; }
+
+h3#slogan span { padding: 5px 48px 12px 0px; background-position: top right; font: normal 18px/1.5 'DBS-BYekan', B Yekan, Tahoma;  }
+	
+.entry .post-meta span.inner { background-position: right 8px; padding: 3px 28px 9px 0px; font: 15px 'DBS-BKoodakBold',B Koodak,Tahoma; }
+
+.entry .post-meta { background-position: 166px bottom; }
+
+/*------------------------------------------------*/
+/*---------------[DROPDOWN MENU]------------------*/
+/*------------------------------------------------*/		
+
+div#top-menu { float: right; background-position: top right; }
+
+ul.nav { margin: 14px 43px 0px 0px; }
+
+ul.nav li { padding: 0px 0px 0px 12px; }
+	
+ul.nav li a { padding: 7px 14px 28px 0px; }
+
+ul.nav > li.current_page_item > a, ul.nav > li.current-cat > a { background: url(menuitem-current.png) no-repeat 35% 100%; }
+
+ul.nav > li.sf-ul.sfHover { background-position: top left;  }
+
+ul.nav > li.sf-ul.sfHover > a { background-position: top right; }
+
+ul.nav li ul li a { padding: 7px 30px 10px 0px; }
+
+ul.nav li ul li { background-position: 173px 11px; }
+
+ul.nav li ul li:hover { background-position: 173px 11px; }
+
+.nav li li:hover ul, ul.nav li li.sfHover ul { right:193px !important; left: auto; }
+
+
+/*------------------------------------------------*/
+/*--------------[FEATURED SLIDER]-----------------*/
+/*------------------------------------------------*/		
+
+#featured-area .container, #pagetop .container { background-position: top right; }
+		
+#breadcrumbs { font: 18px 'DBS-BYekan', B Yekan, Tahoma; }
+
+#breadcrumbs .container { padding-right: 30px; padding-left: 0; }
+		
+#header #search-form { left: -1px; right: auto; padding:0px 12px 0 10px; }
+
+#header #search-form input {  }
+		
+.featitem { margin: 42px 74px 0 90px; }
+
+h2.feat-heading, #pagetop h1 { font: 34px/1.2 'DBS-BKoodakBold', B Koodak, Tahoma !important; }
+			
+.featitem { margin: 42px 74px 0 90px; }
+
+#featured-slider div.excerpt { float: right; }
+
+p.tagline { font: normal 20px/1.2 'DBS-BKoodakBold', B Koodak, Tahoma !important; }
+
+#featured-slider p.tagline, #featured-slider div.excerpt { margin-right: 10px; margin-left: 0; }
+			
+#featured-slider a.readmore { padding-left: 20px; padding-right:0; float: left; background-position: top left; }
+
+#featured-slider a.readmore span { padding: 0px 40px 7px 6px; background-position: top right; font: 18px/38px 'DBS-BYekan', B Yekan, Tahoma; }
+			
+#featured-slider img.thumb { float: left; }
+			
+a#prevlink { right: 0px; left: auto; }
+
+a#nextlink { left: 0px; right: auto; }
+
+#featured-thumbs .container { padding: 20px 53px 20px 0px; }
+
+#featured-thumbs img { float: right; margin-right: 30px; margin-left: 0; }
+
+#featured-thumbs div#active_item { right: 108px ; left: auto; }
+	
+.thumb_popup { background-position: bottom right; right:52px; left: auto; }
+
+	
+/*------------------------------------------------*/
+/*-------------------[COMMENTS]-------------------*/
+/*------------------------------------------------*/
+
+div#respond h3, p#comments { font: normal 25px/1.2 'DBS-BKoodakBold', B Koodak, Tahoma; }
+
+#comment-section { float: right; }
+
+#content-area #comment-section ol.commentlist { padding: 34px 0px 35px 39px; float: right; }
+
+.comment, .comment-body { float: right; }
+
+.comment-author { float: right; margin: -90px -30px 0px 0px; }
+
+#content-area .comment-author img.avatar { float: right; }
+			
+.comment-info { float: right; padding: 3px 13px 0px 0px; }
+
+.comment-info * { font: normal 16px/1.2 'DBS-BKoodakBold', B Koodak, Tahoma !important; }
+
+#content-area a.comment-reply-link { font: normal 13px 'DBS-BYekan', Yekan, Tahoma !important; }
+
+.comment-top, .comment-bottom, .comment-content { float: right; }
+
+.comment-bottom-main { float: right;  }
+
+.comment-bottom-left { left: auto; right: -1px; }
+
+.comment-bottom-right { right: auto; left: -1px; }
+	
+#content-area ol.commentlist .children { float: right; }
+
+#content-area .commentlist .children li { float: right; background-position: bottom right; }
+
+#content-area .commentlist .children li .comment-top-main { background-position: top right; float: right; }
+
+.comment-top-left { background-position: top right; right: -1px; left: auto; }
+
+.comment-top-right { left: -1px; right: auto; }
+
+.comment-top-main { float: right; }
+
+.bubble { right: 25px; left: auto; }
+
+.commentlist li { background-position: bottom right; float: right; }		
+
+.reply-container { left: 30px; right: auto; background-position: left bottom; padding-left: 11px; padding-right: 0; }
+
+.children .comment-top-left { background-position: top right; right: -1px; left: auto; } 
+
+.children .comment-author { float:right; }
+
+.children .comment-top-right { background-position: top left; right: auto; left: -1px; }
+
+.children .reply-container { right: auto; left: 30px; }
+		
+div.navigation, div#respond { float: right; }
+
+div#respond { padding: 10px 0px 0px 0px; }
+
+form#commentform { float: right; }
+
+#comment-section div.navigation div.alignleft { padding-right: 35px; padding-left: 0; }
+		
+#comment-section div#trackbacks { float:right; padding: 34px 35px 10px 39px; }
+
+#commentform label { font: normal 18px 'DBS-BYekan', Yekan, Tahoma; }
+
+#commentform input { display: block; font: normal 13px 'DBS-BYekan', Yekan, Tahoma; }
+
+.form-submit input { font: normal 18px 'DBS-BYekan', Yekan, Tahoma; }
+
+.form-allowed-tags code { display: block; direction: ltr; text-align: left; }
+
+/*------------------------------------------------*/
+/*---------------------[FOOTER]-------------------*/
+/*------------------------------------------------*/
+
+#footer .container { padding: 55px 30px 0px 0px; }
+
+#footer .widget { float: right; margin: 0px 0px 42px 45px; }
+
+#footer .widget.last { clear: left; margin-left: 0px; }
+
+#footer h3.widgettitle { background-position: bottom right; padding: 0px 3px 15px 0px; margin: 0px -3px 17px 0px; font: 22px/1.3 'DBS-BKoodakBold',B Koodak,Tahoma; }
+
+#footer .widget ul { margin: 0px 9px 0px 0px; }
+
+#footer .widget ul li { padding: 7px 18px 7px 0px; background-position: 253px 10px; }
+
+#footer .widget ul li ul { padding:5px 7px 0px 0px; }
+		
+#copyright .container { padding: 22px 0px 12px 0px; }
+
+p#copyinfo { float: left; font: 13px 'DBS-BYekan', B Yekan, Tahoma; }
+
+p#copyinfo1 { float: left; color: white; font: 18px 'DBS-BYekan', B Yekan, Tahoma; }
+
+/*------------------------------------------------*/
+/*--------------------[SIDEBAR]-------------------*/
+/*------------------------------------------------*/
+
+#sidebar { float: left; margin: 0px 0px 0px 30px; }
+
+#sidebar .widget { background-position: bottom right; padding: 23px 24px 28px 12px; }
+
+#sidebar .widget h3.widgettitle { background-position: bottom right; margin: 0px -4px 13px 0px; padding: 0px 4px 15px 0px; font: 18px/1 'DBS-BYekan', B Yekan, Tahoma; }
+		
+#sidebar .widget ul ul { margin: 0px 15px 0px 0px; }
+
+#sidebar .widget ul li { padding: 7px 18px 7px 0px; background-position: right 13px; }
+
+#sidebar .widget ul li ul { padding:5px 7px 0px 0px; margin: 0px 0px -12px; }
+		
+#sidebar #fromblog { background-position: bottom right; padding: 24px 31px 9px 20px; }
+
+#fromblog #rss-icon { left: auto; right: 28px; }
+
+#sidebar #fromblog h3.widgettitle { padding: 0px 35px 15px 0px; font: 18px/1.3 'DBS-BYekan', B Yekan, Tahoma; }
+
+#fromblog h4 { font: 13px/1.3 'DBS-BYekan', B Yekan, Tahoma; background-position: top right; padding: 0px 19px 4px 0px; }
+
+#fromblog p.meta-info { font: normal 11px Tahoma; }
+
+/*------------------------------------------------*/
+/*------------[CAPTIONS AND ALIGNMENTS]-----------*/
+/*------------------------------------------------*/
+
+.wp-caption.alignleft { margin: 0px 0px 10px 10px; }
+
+.wp-caption.alignright { margin: 0px 10px 10px 0px; }
+
+.alignright { float: left; }
+
+.alignleft { float: right }
+
+img.alignleft { float:right; margin-left:15px; margin-right: 0; }
+
+img.alignright { float:left; margin-right:15px; margin-left: 0; }
+
+/*------------------------------------------------*/
+/*---------------[DEFAULT DROPDOWN SETTINGS]---*/
+/*------------------------------------------------*/
+
+.nav li { float:right; }
+
+.nav a { float: right; }
+
+.nav li:hover ul, ul.nav li.sfHover ul { right:0px; left: auto; }
+
+.nav li li:hover ul, ul.nav li li.sfHover ul { right:203px; left: auto; }
+
+.nav li li { float: right; }
+
+.nav li li a:link, .nav li li a:visited { float: right; }
+
+/*------------------------------------------------*/
+/*-----------------[WP CALENDAR]-----------------*/
+/*------------------------------------------------*/
+
+#wp-calendar caption {	font: normal 13px 'DBS-BYekan', B Yekan, Tahoma; }
+
+#wp-calendar #next a { padding-left: 10px; padding-right: 0; text-align: left; }
+
+#wp-calendar #prev a { padding-right: 10px; padding-left: 0; text-align: right; }
+		
+/*------------------------------------------------*/
+/*-------------------[PAGE NAVI]------------------*/
+/*------------------------------------------------*/
+
+.foursixeight { margin: 30px 84px 15px 0px;}
+
+.sitemap-col ul { margin-right: 0px !important; }
+
+.sitemap-col ul ul { margin-right: 20px !important; margin-left: 0; }
+
+.et_pt_gallery_entry { margin: 0 27px 32px 0 !important; }
+
+.nav-previous { float: right; }
+
+.nav-next { float: left; }
+
+.comment_navigation_top, .comment_navigation_bottom { padding: 0 0 0 38px; }
+
+.wp-pagenavi span, .wp-pagenavi a { font: normal 16px/1.2 'DBS-BYekan', B Yekan, Tahoma; }
+
+p#et-search-title span { font: normal 18px/1.2 'DBS-BYekan', B Yekan, Tahoma;  }
+
+.et_pt_blogentry a.readmore span { font: normal 13px/2 'DBS-BYekan', B Yekan, Tahoma; }
+
+p.et_pt_blogmeta { font: normal 13px/1.2 'DBS-BYekan', B Yekan, Tahoma; }
+
+.sitemap-col h2 { font: normal 16px/1.2 'DBS-BYekan', B Yekan, Tahoma; }
+
+#et_pt_gallery { margin-left: 0; margin-right: -33px; }
+
+html body #et_pt_portfolio_gallery { margin-left: 0; margin-right: -15px; }
+
+.et_pt_portfolio_item { margin-right: 27px; }
+
+#et_pt_portfolio_gallery .page-nav { margin-left: 0 !important; margin-right: 70px !important; }
+
+html body .et_portfolio_large .et_pt_portfolio_item { margin-left: 0 !important; margin-right: 15px !important; }
+
+html body .et_portfolio_small .et_pt_portfolio_item { margin-left: 0 !important; margin-right: 22px !important; }
+
+html body .et_portfolio_small { margin-left: 0 !important; margin-right: -3px !important; }
+
+a.small-button, a.icon-button { font: 13px 'DBS-BYekan', B Yekan, Tahoma !important; }
+
+a.big-button { font: 18px B Yekan !important;}
