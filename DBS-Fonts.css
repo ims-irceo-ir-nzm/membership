@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'DBS-BKoodakBold';
+	src: url('DBS-BKoodakBold.eot');
+	src: url('DBS-BKoodakBold.eot?#iefix') format('embedded-opentype'),
+	     url('DBS-BKoodakBold.woff') format('woff'), 
+	     url('DBS-BKoodakBold.ttf')  format('truetype'),
+	     url('DBS-BKoodakBold.svg#DBS-BKoodakBold') format('svg');
+}
+
+@font-face {
+	font-family: 'DBS-BYekan';
+	src: url('DBS-BYekan.eot?#') format('eot'); 
+	src: url('DBS-BYekan.eot?#iefix') format('embedded-opentype'),
+		url('DBS-BYekan.woff') format('woff'),  
+		url('DBS-BYekan.ttf') format('truetype'),
+		url('DBS-BYekan.svg#DBS-BYekan') format('svg');
+}

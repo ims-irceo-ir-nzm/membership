@@ -1,0 +1,205 @@
+/*------------------------------------------------*/
+/*-------------------[SHORTCODES]-----------------*/
+/*------------------------------------------------*/
+
+.et-box { font: 13px Tahoma; }
+
+.et-box-content { padding: 27px 66px 17px 43px; }
+
+.et-warning:before, .et-download:before, .et-info:before, .et-bio:before, .et-shadow:before { left: auto; right: 28px; }
+		
+.et-info:before { background-position: -97px -2px; }
+
+.et-warning:before { background-position: -75px -41px; }
+		
+.et-download:before { background-position: -23px -19px; }
+
+.et-bio:before { background-position: -23px -2px; }
+		
+.et-tooltip-box { left: auto; right: -94px; }
+
+.et-tooltip-arrow { background-position: -120px -2px; left: 129px; }
+
+.et-learn-more h3.heading-more { padding: 16px 22px 16px 50px; font-size: 13px; border-left: none; border-right: 1px solid #fff; }
+
+.et-learn-more h3.heading-more span.et_learnmore_arrow { right: auto; left: 0; border-left: none; border-right: 1px solid #fff; -moz-box-shadow: 1px 0 0 0 #e7e7e7; -webkit-box-shadow: 1px 0 0 0 #e7e7e7; box-shadow: 1px 0 0 0 #e7e7e7; }
+
+.et-learn-more span.et_learnmore_arrow span { left: 50%; margin-left: -6px; background-position: -58px -2px; }
+
+.et-learn-more .open span.et_learnmore_arrow span { background-position: -58px -14px; }
+
+.et_shortcodes_controls { direction: ltr; }
+
+.et_shortcodes_controls a { background-position: -45px -1px; width: 11px; }
+
+.et_shortcodes_controls .et_shortcodes_active_control a { background-position: -45px -14px; }
+
+.et_shortcodes_controls_arrows a { font-size: 13px; }
+
+.et_shortcodes_controls_arrows .et_sc_nav_prev { padding: 14px 38px 12px 48px; border-right: 1px solid #e7e7e7; left: 0; }
+
+.et_shortcodes_controls_arrows .et_sc_nav_next { padding: 14px 48px 12px 38px; border-left: 1px solid #fff; right: 0; }
+	
+.et_shortcodes_controls_arrows .et_sc_nav_next span { right: 30px; }
+
+.et_shortcodes_controls_arrows .et_sc_nav_prev span { left: 30px; }
+
+.et-simple-slider h1, .et-simple-slider h2, .et-simple-slider h3, .et-simple-slider h4, .et-simple-slider h5, .et-simple-slider h6 { font-family: Century Gothic, Arial, sans-serif; color: #333333; }
+		
+.one_half, .one_third, .two_third, .one_fourth , .three_fourth { float:left; margin-right:4%; }
+
+a.small-button, a.icon-button { font-size: 12px; margin: 0 5px 8px 0; }
+
+a.big-button { font-weight: normal !important; font-size: 20px; padding: 14px 24px; margin: 8px 6px 8px 0; }
+
+a.icon-button { padding-left: 36px; position: relative; }
+
+a.icon-button span.et-icon { position: absolute; top: 10px; left: 12px; width: 18px; height: 16px; }
+
+a.download-icon span.et-icon { background-position: -3px -2px; }
+
+a.search-icon span.et-icon { background-position: -206px -2px; }
+
+a.refresh-icon span.et-icon { background-position: -169px -19px; }
+
+a.question-icon span.et-icon { background-position: -164px -2px; }
+
+a.people-icon span.et-icon { background-position: -151px -33px; }
+
+a.warning-icon span.et-icon { background-position: -188px -19px; }
+
+a.mail-icon span.et-icon { background-position: -131px -33px; }
+
+a.heart-icon span.et-icon { background-position: -131px -18px; left: 14px; }
+
+a.paper-icon span.et-icon { background-position: -147px -17px; }
+
+a.notice-icon span.et-icon { background-position: -147px -2px; }
+
+a.stats-icon span.et-icon { background-position: -184px -2px; }
+
+a.rss-icon span.et-icon { background-position: -171px -36px; }
+
+ul.et_shortcodes_mobile_nav .et_sc_nav_prev span, .et_shortcodes_controls_arrows .et_sc_nav_prev span { background-position: -3px -24px; }
+
+ul.et_shortcodes_mobile_nav .et_sc_nav_next span, .et_shortcodes_controls_arrows .et_sc_nav_next span { background-position: -3px -40px; }
+
+.et-tabs-container .et-tabs-control:before { left: 0; }
+
+.et-tabs-container .et-tabs-control li { float: left; border-left: 1px solid #e7e7e7; }
+		
+.et-tabs-container .et-tabs-control li:first-child { border-left: 1px solid #fff; }
+
+.et-tabs-container .et-tabs-control li a { font-size: 13px;  }
+
+.et-tabs-container .et-tabs-control li.active:before { left: 0; }
+
+.js .et_sliderfx_slide .et-tabs-content-wrapper { left: 0; }
+
+.js .et_sliderfx_slide .et-tabs-content-wrapper > div { float: left; }
+
+.et-tabs-container ul.et_shortcodes_mobile_nav li { float: right; line-height: 26px; }
+
+.et-tabs-container ul.et_shortcodes_mobile_nav a { padding: 16px 10px 16px 45px; !important; font-size: 13px; }
+
+.et-tabs-container ul.et_shortcodes_mobile_nav a.et_sc_nav_next { padding: 16px 45px 16px 10px; text-align: right; }
+
+.et-tabs-container ul.et_shortcodes_mobile_nav .et_sc_nav_next:before { left: 0; }
+		
+.et-tabs-container ul.et_shortcodes_mobile_nav .et_sc_nav_next span { right: 28px; }
+
+.et-tabs-container ul.et_shortcodes_mobile_nav .et_sc_nav_prev span { left: 28px; }		
+
+.tabs-left .et-tabs-control, .tabs-left ul.et_shortcodes_mobile_nav { float: left; }
+
+.tabs-left .et-tabs-control li a { padding: 15px 10px 15px 20px; }
+
+.tabs-left .et-tabs-control li.active a { margin-right: -1px; }
+
+.tabs-left .et-tabs-content { margin: 30px 30px 20px 180px; position: relative; } 
+
+.et_left_tabs_bg { left: 0; }
+	
+.tabs-left ul.et_shortcodes_mobile_nav .et_sc_nav_next span { right: 50%; margin-right: -4px; }
+
+.tabs-left ul.et_shortcodes_mobile_nav .et_sc_nav_prev span { left: 50%; margin-left: -4px; }		
+
+.author-shortcodes { font-size: 13px; }
+
+.author-shortcodes .author-inner { padding: 30px 117px 20px 30px; }
+
+.author-shortcodes .author-image { left: auto; right: 30px; }
+
+.author-shortcodes .author-image .author-overlay { left: auto; right: 0; }
+
+.et-protected-title { border-left: 1px solid #fff; padding: 18px 10px 17px 50px; }
+	
+.et-protected-title:before { left: auto; right: 20px; background-position: -23px -36px; }
+
+.et-protected-form { padding: 32px 37px 32px 32px; text-align: right; }
+
+.et-protected-form p .et_protected_icon { left: auto; right: 18px; background-position: -190px -37px; }
+
+.et-protected-form p .et_protected_password { background-position: -275px -2px; }
+
+.et-protected-form p input { font-size: 13px; padding-left: 20px; padding-right: 40px; }
+
+.et-image-overlay { left: auto; right: 0; }
+
+.et-custom-list ul { padding-right: 0; }
+
+.et-custom-list ul li { padding-left: 0; padding-right: 28px !important; }
+
+.et-custom-list ul li:before { left: auto; right: 0; background-position: -74px -2px; }
+
+.etlist-x ul li:before { left: auto; right: 0; background-position: -75px -21px; }
+
+.etlist-dot ul li { padding-left: 0; padding-right: 25px !important; }
+
+.etlist-dot ul li:before { left: auto; right: 0; background-position: -230px -3px; }
+
+.pricing-table { float: right; margin-left: 0; margin-right: -1px; }
+				
+.pricing-table ul.pricing li { padding: 14px 63px 14px 7px; }
+
+.pricing-table ul.pricing li span { left: auto; right: 30px;background-position: -74px -2px; }
+
+.pricing-table ul.pricing li.x-mark span { background-position: -74px -20px; }
+					
+span.et-price { font-size: 36px; font-family: Tahoma; }
+
+span.et-price sup { left: auto; right: 1px; }
+
+.pricing-table a.icon-button { padding-left: 0; margin-right: 15px; left: auto; right: 50%; }
+				
+.et-testimonial-author-info { border-left: none; border-right: 1px solid #fff; }
+
+.t-img { float: right; margin: 0 0 5px 25px; }
+
+.t-overlay { left: auto; right: 0; }
+
+.t-position, .et-testimonial { font-family: Tahoma; font-style: italic; font-size: 13px; }
+
+.et-testimonial { padding: 43px 77px 30px 35px; }
+
+.et-testimonial:before { left: auto; right: 35px; background-position: -45px -35px; }
+
+.t-bottom-arrow { background-position: -97px -25px; right: auto; right: 40px; }
+
+.et-dropcap { font-size: 48px; float: right; margin:0 0 0 7px; }
+
+.et_quote { padding-left: 0; padding-right: 57px; font-family: Tahoma; font-size: 13px; }
+
+.et_quote .et_quote_sign { background-position: -206px -20px; left: auto; right: 0; }
+
+.quote-center .et_quote_sign { background-position: -251px -2px; }
+
+.quote-center .et_quote_additional_sign { background-position: -251px -22px; right: auto; left: 13px; }
+
+.quote-center { font-size: 24px; padding-left: 0; padding-right: 30px; }
+
+.quote-center .et_right_quote { padding-right: 0; padding-left: 30px; }
+		
+.tabs-left .et-tabs-control { padding-left: 0; padding-right: 0; }	
+	
+.last { margin-left: 0px !important; clear: left; }

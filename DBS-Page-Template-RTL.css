@@ -1,0 +1,71 @@
+.sitemap-col { float: right; margin: 0 0 10px 2%; }
+
+#sitemap .last { margin-left: 0px; clear: left; }
+
+.sitemap-col h2 { font: 16px Tahoma; }
+
+.sitemap-col ul { list-style:none outside none; padding-right: 0px; margin-right: 0; }
+
+.sitemap-col ul li a { background-position: right center; padding: 4px 19px 4px 0px; }
+	
+ul#sitemap-categories li a { background-position: right center; }
+
+ul#sitemap-tags li a { background-position: right center; }
+
+ul#sitemap-authors li a { background-position: right center; }	
+
+h2.et_pt_title { font-size: 22px; padding-left: 0; padding-right: 2px; }
+
+p.et_pt_blogmeta { font: 12px Tahoma; padding:8px 4px 7px 5px; }
+	
+div.et_pt_thumb { margin:0 0 0 20px; padding:8px 8px 0 0; }
+
+div.et_pt_thumb span.overlay { left: auto; right: 0; }
+	
+.et_pt_blogentry a.readmore { float: left; }
+		
+.et_pt_gallery_entry { float: right; }
+
+.et_pt_item_image span.overlay { left: auto; right: 3px; }
+
+#et_contact_left, #et_contact_right { float: right; }
+
+#et_contact_right { margin-left: 0; margin-right: 50px; }
+
+#et_contact_submit, #et_contact_reset { float: left; font: 13px Tahoma; margin-right: 0; margin-left: 9px; }
+
+#et_contact_submit { margin-right: 0; margin-left: 6px; }
+
+#et-search-inner { padding: 19px 29px 0px 14px; }
+
+#et-search-inner input { font: 13px Tahoma; }
+
+p#et-search-title { background-position: bottom right; padding: 0px 10px 10px 0; margin-left: 0; margin-right: -8px; }
+
+p#et-search-title span { background-position: right 4px; padding: 0px 24px 0px 0px; font-size: 16px; }
+
+#et-search-left { float: right; width: 448px; }
+
+#et-search-right { float: left; text-align: left; }
+	
+p#et_choose_posts, p#et_choose_pages, p#et_choose_date, p#et_choose_cat { float: right; margin-right: 0; margin-left: 8px; }
+
+p#et_choose_cat { margin-left: 0px; }
+	
+select#et-month-choice, select#et-cat { width: 135px; }
+	
+p#et_choose_posts input, p#et_choose_pages input { margin-left: 0px; margin-right: 4px; }
+	
+#et_search_submit { cursor: pointer; }
+	
+.et_pt_portfolio_item { float: right; margin-left: 0px !important; }
+
+.et_portfolio_small .et_pt_portfolio_item, .et_pt_portfolio_item, .et_portfolio_large .et_pt_portfolio_item { margin-left: 0px !important; }
+
+.et_pt_portfolio_item h2 { font-size: 16px; }
+
+.et_pt_portfolio_overlay { left: auto; right: 0; }
+
+input, textarea { font: 13px Tahoma }
+
+
